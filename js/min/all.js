@@ -34,3 +34,11 @@ if(!jQuery)throw new Error("Bootstrap requires jQuery");+function(a){"use strict
 }());
 
 // Place any jQuery/helper plugins in here.
+
+// Handler for .ready() called.
+$(document).ready(function() {
+
+    // Tooltips
+    $('.tooltip').tooltip();
+
+});

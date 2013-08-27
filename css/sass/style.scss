@@ -1,5 +1,19 @@
 
+/**
+ * Variables
+ */
+@import "core/variables.scss";
+
+/**
+ * Bootstrap
+ */
 @import "vendor/bootstrap/lib/bootstrap.scss";
+
+/**
+ * Base Styles
+ * base.scss
+ */
+@import "sections/base.scss";
 
 
 .left-and-right {
