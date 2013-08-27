@@ -1,0 +1,13 @@
+
+@import "vendor/bootstrap/lib/bootstrap.scss";
+
+
+.left-and-right {
+  @include make-row();
+  .left {
+    @include make-md-column(6);
+  }
+  .right {
+    @include make-md-column(6);
+  }
+}
