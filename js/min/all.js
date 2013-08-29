@@ -39,6 +39,6 @@ if(!jQuery)throw new Error("Bootstrap requires jQuery");+function(a){"use strict
 $(document).ready(function() {
 
     // Tooltips
-    $('.tooltip').tooltip();
+    $('.tooltip-hook').tooltip();
 
 });

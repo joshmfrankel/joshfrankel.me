@@ -15,6 +15,16 @@
  */
 @import "sections/base.scss";
 
+/**
+ * My Skillset
+ * skillset.scss
+ */
+
+.my-skillset {
+    @import "sections/skillset.scss";
+}
+
+
 
 .left-and-right {
   @include make-row();

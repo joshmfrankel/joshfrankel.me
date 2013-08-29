@@ -38,12 +38,12 @@
                 </div>
                 <div class="navbar-collapse collapse navigation">
                     <ul class="nav navbar-nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-star"></span></span>My Work</a></li>
-                        <li><a href="#">What I Do</a></li>
-                        <li><a href="#">My Experience</a></li>
-                        <li><a href="blog/">The Blog</a></li>
-                        <li><a href="#" data-toggle="tooltip" data-original-title="You'll be glad you did" data-placement="bottom">Hire Me!</a></li>
+                        <li><a href="#home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="#My-Work"><span class="glyphicon glyphicon-briefcase"></span> My Work</a></li>
+                        <li><a href="#What-I-Do"><span class="glyphicon glyphicon-hdd"></span> What I Do</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> My Experience</a></li>
+                        <li><a href="blog"><span class="glyphicon glyphicon-comment"></span> What I Write</a></li>
+                        <li><a href="#" class="tooltip-hook" data-toggle="tooltip" title="You'll be glad you did" data-placement="bottom"><span class="glyphicon glyphicon-earphone"></span> Hire Me!</a></li>
                     </ul>
                 </div>
             </nav>
@@ -56,7 +56,7 @@
 
 
         <!-- Home Page -->
-        <section id="home" itemscope itemtype="http://schema.org/Person">
+        <div id="home" itemscope itemtype="http://schema.org/Person">
 
             <div class="jumbotron">
                 <div class="container">
@@ -73,41 +73,42 @@
 
                     </div>
                     <p>I am fueled by the challenge of conquering the latest advances in programming <br /> and technology. My goal is to create code that is clean, functional, and always up<br />to web standards.  </p>
-                    <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+                    <p><a href="#" class="btn btn-primary btn-lg">Hire Me!</a></p>
                 </div>
             </div>
 
-        </section>
+        </div>
+        <!-- End Home -->
 
         <!-- Testimonial -->
-        <section id="testimonial" class="blue-gradient">
-                <div class="wrapper">
-                    <h2>What People Say About Me</h2>
-                    <div class="testimonial-container">
-                        <div class="testimonial-single">
-                            <blockquote>Josh is a great developer to work with. He is very thorough and passionate about his work. He is willing to learn new
-                            technologies, and picks them up quickly. He has the ability to work with large-scale and high priority applications
-                            while interacting genuinely and personably with his colleagues.
-                            </blockquote>
-                            <strong>-Dawn Anthony, Mesirow Financial</strong>
-                        </div>
-                        <div class="testimonial-single">
-                            <blockquote>Josh was very detailed-oriented and took a lot of pride in his work. He was a very think out-of-the-box type of worker. It was definitely a pleasure to work with him at Mesirow Financial.
-                            </blockquote>
-                            <strong>-Derek Carter, Mesirow Financial</strong>
-                        </div>
-                        <div class="testimonial-single">
-                            <blockquote>Josh is a self starter and very focused on finding solutions to problems. He is a valuable asset to any team and we thoroughly enjoyed having him work with us over the summer.
-                            </blockquote>
-                            <strong>-Mike Sauce, Saucepan Creative</strong>
-                        </div>
+        <div id="testimonial" class="blue-gradient">
+            <div class="wrapper">
+                <h2>What People Say About Me</h2>
+                <div class="testimonial-container">
+                    <div class="testimonial-single">
+                        <blockquote class="well">Josh is a great developer to work with. He is very thorough and passionate about his work. He is willing to learn new
+                        technologies, and picks them up quickly. He has the ability to work with large-scale and high priority applications
+                        while interacting genuinely and personably with his colleagues.
+                        </blockquote>
+                        <strong>-Dawn Anthony, Mesirow Financial</strong>
                     </div>
-
+                    <div class="testimonial-single">
+                        <blockquote class="well">Josh was very detailed-oriented and took a lot of pride in his work. He was a very think out-of-the-box type of worker. It was definitely a pleasure to work with him at Mesirow Financial.
+                        </blockquote>
+                        <strong>-Derek Carter, Mesirow Financial</strong>
+                    </div>
+                    <div class="testimonial-single">
+                        <blockquote class="well">Josh is a self starter and very focused on finding solutions to problems. He is a valuable asset to any team and we thoroughly enjoyed having him work with us over the summer.
+                        </blockquote>
+                        <strong>-Mike Sauce, Saucepan Creative</strong>
+                    </div>
                 </div>
-            </section>
+
+            </div>
+        </div>
 
         <!-- My Work -->
-        <div id="work">
+        <div id="My-Work">
             <div class="page-header">
                 <h2>My Work <small>The Portfolio</small></h2>
             </div>
@@ -148,6 +149,49 @@
 
 
         <!-- What I do -->
+        <div id="What-I-Do">
+            <div class="page-header">
+                <h2>What I Do <small>Skillset and About Me</small></h2>
+            </div>
+
+            <!-- Left -->
+            <p>I am a <mark>passionate web developer</mark> who thrives on the
+            challenge of keeping up with the ever changing web.  My
+            experience includes converting existing websites into
+            <mark>responsive</mark> layouts and implementing <mark>mobile first design </mark>
+            strategy for new sites. My work has also involved coding in
+            a variety of languages, server and database tasks, and
+            ensuring websites are up to <mark>SEO</mark> standards.</p>
+
+            <!-- Right -->
+
+            <p>Even when I'm not on the job you can find me <mark>authoring
+            new plug-ins in jQuery</mark> to ensure everything I develop is
+            always up to web standards.</p>
+                            <p>Outside of the office (and the Internet) I am a <mark class="fire">spicy
+            food addict</mark> with love of video games. My creative
+            outlets include photography and playing the drums.
+            When I am not coding, you can find me rocking out
+            to electronic music or watching a great movie with
+            my wife and dog.</p>
+
+            <!-- My Skillset -->
+            <div class="my-skillset">
+                <p class="skill skill-php">PHP</p>
+                <p class="skill skill-css">CSS 3</p>
+                <p class="skill skill-jquery">jQuery</p>
+                <p class="skill skill-sass">Sass</p>
+                <p class="skill skill-rails">Ruby on Rails</p>
+                <p class="skill skill-wordpress">Wordpress</p>
+                <p class="skill skill-sql">SQL</p>
+                <p class="skill skill-oop-mvc">OOP / MVC</p>
+                <p class="skill skill-git">Git</p>
+                <p class="skill skill-responsive">Responsive Design</p>
+                <p class="skill skill-unit-testing">Unit Testing</p>
+                <p class="skill skill-psr">PSR Standards</p>
+            </div>
+
+        </div>
 
             <!-- Row -->
 

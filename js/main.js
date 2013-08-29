@@ -2,6 +2,8 @@
 $(document).ready(function() {
 
     // Tooltips
-    $('.tooltip').tooltip();
+    $('.tooltip-hook').tooltip();
+
+    // TODO: disable menu tooltip on responsive
 
 });
