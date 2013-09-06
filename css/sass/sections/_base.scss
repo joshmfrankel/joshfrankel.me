@@ -5,3 +5,15 @@ body {
 h1 {
     font-family: $franchise;
 }
+mark {
+    padding: 2px 2px 0 2px;
+    border-radius: 3px;
+    background: $brand-primary;
+    color:#fff;
+    cursor:pointer;
+    text-shadow: -1px -1px 0 rgba(115,114,115,0.16);
+
+    &:hover {
+        background: darken($brand-primary, 5%);
+    }
+}

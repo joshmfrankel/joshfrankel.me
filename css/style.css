@@ -4046,7 +4046,7 @@ input[type="button"].btn-block {
   color: #777777;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
+  color: #7cb8cc;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -4072,8 +4072,8 @@ input[type="button"].btn-block {
 }
 .navbar-default .navbar-nav > .dropdown > a:hover .caret,
 .navbar-default .navbar-nav > .dropdown > a:focus .caret {
-  border-top-color: #333333;
-  border-bottom-color: #333333;
+  border-top-color: #7cb8cc;
+  border-bottom-color: #7cb8cc;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: #e7e7e7;
@@ -4092,7 +4092,7 @@ input[type="button"].btn-block {
     color: #777777;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
+    color: #7cb8cc;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
@@ -4108,7 +4108,7 @@ input[type="button"].btn-block {
   color: #777777;
 }
 .navbar-default .navbar-link:hover {
-  color: #333333;
+  color: #7cb8cc;
 }
 
 .navbar-inverse {
@@ -6241,51 +6241,54 @@ h1 {
   font-family: "Franchise", "Impact", sans-serif;
 }
 
+mark {
+  padding: 2px 2px 0 2px;
+  border-radius: 3px;
+  background: #7cb8cc;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: -1px -1px 0 rgba(115, 114, 115, 0.16);
+}
+mark:hover {
+  background: #6aaec5;
+}
+
 /**
  * My Skillset
  * skillset.scss
  */
 .my-skillset .skill {
-  color: #fff;
-  display: block;
-  font-weight: 700;
-  width: 150px;
-  height: 150px;
-  border: 3px solid #777;
-  border-radius: 75px;
-  vertical-align: middle;
-  text-align: center;
-  line-height: 150px;
+  display: inline-block;
 }
 .my-skillset .skill-php {
-  background: #9999cc;
+  color: #9999cc;
 }
 .my-skillset .skill-css {
-  background: #669517;
+  color: #669517;
 }
 .my-skillset .skill-jquery {
-  background: #0769AD;
+  color: #0769AD;
 }
 .my-skillset .skill-sass {
-  background: #ce4dd6;
+  color: #ce4dd6;
 }
 .my-skillset .skill-rails {
-  background: #981a21;
+  color: #981a21;
 }
 .my-skillset .skill-wordpress {
-  background: #222;
+  color: #222;
 }
 .my-skillset .skill-git {
-  background: #f14e32;
+  color: #f14e32;
 }
 .my-skillset .skill-responsive {
-  background: #fdc328;
+  color: #fdc328;
 }
 .my-skillset .skill-unit-testing {
-  background: #f5f5f5;
+  color: #f5f5f5;
 }
 .my-skillset .skill-psr {
-  background: #9ddcff;
+  color: #9ddcff;
 }
 
 .left-and-right {
