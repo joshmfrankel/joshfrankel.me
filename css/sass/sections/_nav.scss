@@ -1,0 +1,19 @@
+header nav {
+
+    .navbar-collapse {
+        // float:right;
+    }
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+    header nav .navbar-collapse .glyphicon {
+        display: none;
+    }
+}
+
+// Greater than tablet
+@media (min-width: $screen-sm) {
+    header nav .navbar-collapse {
+        float:right;
+    }
+}

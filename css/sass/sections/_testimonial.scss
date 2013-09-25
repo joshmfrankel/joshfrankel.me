@@ -1,0 +1,10 @@
+
+.testimonial-single {
+
+    blockquote {
+        background: rgba(#fff, 1);
+        border: none;
+        @include border-radius(5px);
+    }
+}
+

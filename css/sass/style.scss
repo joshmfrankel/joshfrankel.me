@@ -1,8 +1,15 @@
 
+@import "compass";
+
 /**
  * Variables
  */
 @import "core/variables.scss";
+
+/**
+ * CLasses
+ */
+@import "core/classes.scss";
 
 /**
  * Bootstrap
@@ -14,6 +21,20 @@
  * base.scss
  */
 @import "sections/base.scss";
+
+/**
+ * Nav
+ * nav.scss
+ */
+@import "sections/nav.scss";
+
+/**
+ * Testimonial
+ * testimonial.scss
+ */
+#testimonial {
+    @import "sections/testimonial.scss";
+}
 
 /**
  * My Skillset

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Variables
  */
@@ -7,6 +8,20 @@
   src: url("../css/fonts/Franchise-Bold-hinted.eot?#iefix") format("embedded-opentype"), url("../css/fonts/Franchise-Bold-hinted.woff") format("woff"), url("../css/fonts/Franchise-Bold-hinted.ttf") format("truetype"), url("../css/fonts/Franchise-Bold-hinted.svg") format("svg");
   font-weight: bold;
   font-style: normal;
+}
+
+/**
+ * CLasses
+ */
+.blue-gradient {
+  background: #7cb8cc;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+  background: -moz-linear-gradient(top, #7cb8cc 61%, #75adc0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(61%, #7cb8cc), color-stop(100%, #75adc0));
+  background: -webkit-linear-gradient(top, #7cb8cc 61%, #75adc0 100%);
+  background: -o-linear-gradient(top, #7cb8cc 61%, #75adc0 100%);
+  background: -ms-linear-gradient(top, #7cb8cc 61%, #75adc0 100%);
+  background: linear-gradient(to bottom, #7cb8cc 61%, #75adc0 100%);
 }
 
 /**
@@ -6251,6 +6266,34 @@ mark {
 }
 mark:hover {
   background: #6aaec5;
+}
+
+/**
+ * Nav
+ * nav.scss
+ */
+@media (min-width: 768px) and (max-width: 992px) {
+  header nav .navbar-collapse .glyphicon {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  header nav .navbar-collapse {
+    float: right;
+  }
+}
+/**
+ * Testimonial
+ * testimonial.scss
+ */
+#testimonial .testimonial-single blockquote {
+  background: white;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /**
