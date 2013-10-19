@@ -1,0 +1,22 @@
+h1 {
+    text-shadow: 0 1px 0 #fff;
+    color:$dark-gray;
+
+    .hero-job {
+        color:$brand-primary;
+    }
+    .hero-desc {
+        color:$brand-primary;
+    }
+    .hero-job,
+    .hero-desc {
+        @include transition(all .5s);
+
+        &:hover {
+            color:lighten($brand-primary, 7%);
+        }
+    }
+}
+.tagline {
+    font-style: italic;
+}

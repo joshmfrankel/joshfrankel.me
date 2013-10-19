@@ -21,7 +21,8 @@
         <link rel="shortcut icon" href="img/favicon.png">
     </head>
 
-    <body data-spy="scroll" data-target="">
+    <!-- data-spy="scroll" data-target="header .navbar"-->
+    <body>
 
         <!-- Navigation and Logo -->
         <header>
@@ -34,7 +35,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Brand</a>
+                        <a class="navbar-brand" href="#home"><img src="img/layout/nav-logo.png" alt="Web Developer - Josh Frankel" /></a>
                     </div>
                     <div class="navbar-collapse collapse navigation">
                         <ul class="nav navbar-nav">
@@ -42,8 +43,8 @@
                             <li><a href="#My-Work"><span class="glyphicon glyphicon-briefcase"></span> My Work</a></li>
                             <li><a href="#What-I-Do"><span class="glyphicon glyphicon-hdd"></span> What I Do</a></li>
                             <li><a href="#My-Experience"><span class="glyphicon glyphicon-list-alt"></span> My Experience</a></li>
-                            <li><a href="blog"><span class="glyphicon glyphicon-comment"></span> What I Write</a></li>
-                            <li><a href="#Hire-Me!" class="tooltip-hook" data-toggle="tooltip" title="You'll be glad you did" data-placement="bottom"><span class="glyphicon glyphicon-earphone"></span> Hire Me!</a></li>
+                            <li><a href="http://www.blog.joshmfrankel.com" target="_blank"><span class="glyphicon glyphicon-comment"></span> What I Write</a></li>
+                            <li><a href="#Hire-Me" class="tooltip-hook" data-toggle="tooltip" title="You'll be glad you did" data-placement="bottom"><span class="glyphicon glyphicon-earphone"></span> Hire Me!</a></li>
                         </ul>
                     </div>
                 </div>
@@ -73,8 +74,8 @@
                         .</h1>
 
                     </div>
-                    <p>I am fueled by the challenge of conquering the latest advances in programming <br /> and technology. My goal is to create code that is clean, functional, and always up<br />to web standards.  </p>
-                    <p><a href="#" class="btn btn-primary btn-lg">Hire Me!</a></p>
+                    <p class="tagline">I am fueled by the challenge of conquering the latest advances in programming <br /> and technology. My goal is to create code that is clean, functional, and always up<br />to web standards.  </p>
+                    <p class="jump-link"><a href="#Hire-Me" class="btn btn-primary btn-lg">Hire Me!</a></p>
                 </div>
             </div>
 
@@ -82,12 +83,12 @@
         <!-- End Home -->
 
         <!-- Testimonial -->
-        <div id="testimonial" class="blue-gradient">
+        <div id="testimonial" class="blue-gradient inverse">
             <div class="container">
                 <h2>What People Say About Me</h2>
                 <div class="testimonial-container">
                     <div class="testimonial-single">
-                        <blockquote>
+                        <blockquote class="well">
                             <p>Josh is a great developer to work with. He is very thorough and passionate about his work. He is willing to learn new
                             technologies, and picks them up quickly. He has the ability to work with large-scale and high priority applications
                             while interacting genuinely and personably with his colleagues.</p>
@@ -95,13 +96,13 @@
                         </blockquote>
                     </div>
                     <div class="testimonial-single">
-                        <blockquote>
+                        <blockquote class="well">
                             <p>Josh was very detailed-oriented and took a lot of pride in his work. He was a very think out-of-the-box type of worker. It was definitely a pleasure to work with him at Mesirow Financial.</p>
                             <small>Derek Carter, <cite title="Mesirow Financial, Chicago">Mesirow Financial</cite></small>
                         </blockquote>
                     </div>
                     <div class="testimonial-single">
-                        <blockquote>
+                        <blockquote class="well">
                             <p>Josh is a self starter and very focused on finding solutions to problems. He is a valuable asset to any team and we thoroughly enjoyed having him work with us over the summer.</p>
                             <small>Mike Sauce, <cite title="Saucepan Creative, Noblesville, IN">Saucepan Creative</cite></small>
                         </blockquote>
@@ -112,7 +113,7 @@
         </div>
 
         <!-- My Work -->
-        <div id="My-Work" class="container">
+        <div id="My-Work" class="container section-offset">
             <div class="page-header">
                 <h2>My Work <small>The Portfolio</small></h2>
             </div>
@@ -131,15 +132,15 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <img src="img/portfolio/iLoveRuns-large.png" alt="Placeholder" />
-                            <div class="carousel-caption">
-                            Caption text
-                            </div>
+                        <div class="carousel-caption">
+                        Caption text WHERE ARE YOU!!!!!
+                        </div>
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/placeholder.jpg" alt="Placeholder" />
-                            <div class="carousel-caption">
-                            Caption text
-                            </div>
+                        <img src="img/portfolio/iLoveRuns-large.png" alt="Placeholder" />
+                        <div class="carousel-caption">
+                        Caption text
+                        </div>
                     </div>
                 </div>
 
@@ -159,46 +160,57 @@
 
 
         <!-- What I do -->
-        <div id="What-I-Do" class="container">
+        <div id="What-I-Do" class="container section-offset">
             <div class="page-header">
                 <h2>What I Do <small>The Skills</small></h2>
             </div>
 
-            <!-- Left -->
-            <p>I am a <mark>passionate web developer</mark> who thrives on the
-            challenge of keeping up with the ever changing web.  My
-            experience includes converting existing websites into
-            <mark>responsive</mark> layouts and implementing <mark>mobile first design </mark>
-            strategy for new sites. My work has also involved coding in
-            a variety of languages, server and database tasks, and
-            ensuring websites are up to <mark>SEO</mark> standards.</p>
+            <div class="excerpt-container">
 
-            <!-- Right -->
+                <div class="grid-left">
+                    <p>I am a <mark class="tooltip-hook" data-toggle="tooltip" title="I love researching, reading, programming, learning, teaching, and experiencing everything web" data-placement="bottom">passionate web developer</mark> who thrives on the
+                    challenge of keeping up with the ever changing web.  My
+                    experience includes converting existing websites into
+                    <mark class="tooltip-hook" data-toggle="tooltip" title="I focus on multi-platform solutions by using an device agnostic approach to responsive design" data-placement="top">responsive</mark> layouts and implementing <mark class="tooltip-hook" data-toggle="tooltip" title="A mobile first strategy provides confidence that all devices will have a smooth experience" data-placement="top">mobile first design </mark>
+                    strategy for new sites. My work has also involved coding in
+                    a variety of languages, server and database tasks, and
+                    ensuring websites are up to <mark class="tooltip-hook" data-toggle="tooltip" title="Proper Search Engine Optimization requires a knowledge of white hat techniques." data-placement="top">SEO</mark> standards.</p>
+                </div><!-- End Excerpt Left -->
 
-            <p>Even when I'm not on the job you can find me <mark>authoring
-            new plug-ins in jQuery</mark> to ensure everything I develop is
-            always up to web standards.</p>
-                            <p>Outside of the office (and the Internet) I am a <mark class="fire">spicy
-            food addict</mark> with love of video games. My creative
-            outlets include photography and playing the drums.
-            When I am not coding, you can find me rocking out
-            to electronic music or watching a great movie with
-            my wife and dog.</p>
+
+                <div class="grid-right">
+                    <p>Even when I'm not on the job you can find me <mark>authoring
+                    new plug-ins in jQuery</mark> to ensure everything I develop is
+                    always up to web standards.</p>
+                                    <p>Outside of the office (and the Internet) I am a <mark class="fire">spicy
+                    food addict</mark> with love of video games. My creative
+                    outlets include photography and playing the drums.
+                    When I am not coding, you can find me rocking out
+                    to electronic music or watching a great movie with
+                    my wife and dog.</p>
+                </div><!-- End excerpt Right -->
+            </div><!-- End Excerpt Container -->
 
             <!-- My Skillset -->
             <div class="my-skillset well">
-                <p class="skill skill-php tooltip-hook" data-toggle="tooltip" title="PHP is a popular general-purpose scripting language that is especially suited to web development." data-placement="right"><span class="glyphicon glyphicon-ok-sign"></span> PHP</p>
-                <p class="skill skill-css tooltip-hook" data-toggle="tooltip" title="HTML is the base ingredient. CSS are the spices. " data-placement="right"><span class="glyphicon glyphicon-ok-sign"></span> HTML5/CSS3</p>
-                <p class="skill skill-jquery"><span class="glyphicon glyphicon-ok-sign"></span> JS</p>
-                <p class="skill skill-sass"><span class="glyphicon glyphicon-ok-sign"></span> SASS</p>
-                <p class="skill skill-rails"><span class="glyphicon glyphicon-ok-sign"></span> Ruby on Rails</p>
-                <p class="skill skill-wordpress"><span class="glyphicon glyphicon-ok-sign"></span> Wordpress</p>
-                <p class="skill skill-sql"><span class="glyphicon glyphicon-ok-sign"></span> SQL</p>
-                <p class="skill skill-oop-mvc"><span class="glyphicon glyphicon-ok-sign"></span> OOP / MVC</p>
-                <p class="skill skill-git"><span class="glyphicon glyphicon-ok-sign"></span> Git</p>
-                <p class="skill skill-responsive"><span class="glyphicon glyphicon-ok-sign"></span> Responsive Design</p>
-                <p class="skill skill-unit-testing"><span class="glyphicon glyphicon-ok-sign"></span> Unit Testing</p>
-                <p class="skill skill-psr"><span class="glyphicon glyphicon-ok-sign"></span> PSR Standards</p>
+                <div class="skillset-col-1">
+                    <p class="skill skill-php" title="PHP is a popular general-purpose scripting language that is especially suited to web development."><span class="glyphicon glyphicon-ok-sign"></span> PHP</p>
+                    <p class="skill skill-css" title="HTML is the base ingredient. CSS are the spices. "><span class="glyphicon glyphicon-ok-sign"></span> HTML5/CSS3</p>
+                    <p class="skill skill-jquery"><span class="glyphicon glyphicon-ok-sign"></span> JS</p>
+                    <p class="skill skill-sass"><span class="glyphicon glyphicon-ok-sign"></span> SASS</p>
+                </div>
+                <div class="skillset-col-2">
+                    <p class="skill skill-rails"><span class="glyphicon glyphicon-ok-sign"></span> Ruby on Rails</p>
+                    <p class="skill skill-wordpress"><span class="glyphicon glyphicon-ok-sign"></span> Wordpress</p>
+                    <p class="skill skill-sql"><span class="glyphicon glyphicon-ok-sign"></span> SQL</p>
+                    <p class="skill skill-oop-mvc"><span class="glyphicon glyphicon-ok-sign"></span> OOP / MVC</p>
+                </div>
+                <div class="skillset-col-3">
+                    <p class="skill skill-git"><span class="glyphicon glyphicon-ok-sign"></span> Git</p>
+                    <p class="skill skill-responsive"><span class="glyphicon glyphicon-ok-sign"></span> Responsive Design</p>
+                    <p class="skill skill-unit-testing"><span class="glyphicon glyphicon-ok-sign"></span> Unit Testing</p>
+                    <p class="skill skill-psr"><span class="glyphicon glyphicon-ok-sign"></span> PSR Standards</p>
+                </div>
             </div>
 
         </div>
@@ -212,18 +224,37 @@
             <!-- What I Write About -->
 
         <!-- My Experience / Resume -->
-        <div id="My-Experience" class="container">
+        <div id="My-Experience" class="container section-offset">
             <div class="page-header">
                 <h2>My Experience <small>The Résumé</small></h2>
             </div>
         </div>
 
         <!-- Hire Me and Contact -->
-        <div id="Hire-Me!" class="container">
-            <div class="page-header">
-                <h2>Hire Me! <small>You'll be glad you did</small></h2>
+        <div id="Hire-Me" class="blue-gradient inverse section-offset">
+            <div class="container">
+                <div class="page-header">
+                    <h2>Hire Me! <small>You'll be glad you did</small></h2>
+                </div>
+                <aside>
+                    <h2>Reasons to Hire Me</h2>
+                    <ul>
+                        <li class="social-icon social-github"><a href="https://github.com/joshmfrankel">I have no (git) commit hangups</a></li>
+                        <li class="social-icon social-wordpress"><a href="http://blog.joshmfrankel.com/">I share what I learn</a></li>
+                        <li class="social-icon social-stackoverflow"><a href="http://stackoverflow.com/users/906974/josh-frankel">I give back to the community</a></li>
+                        <li class="social-icon social-linkedin"><a href="http://www.linkedin.com/in/joshmfrankel">I take professionalism seriously</a></li>
+                        <li class="social-icon social-twitter"><a href="https://twitter.com/Joshmfrankel">I like to be social</a></li>
+                        <li class="social-icon social-email"><a href="mailto:josh@joshfrankel.me">I am easy to get a hold of</a></li>
+                        <li class="social-icon social-resume"><a href="/docs/code-sample.pdf">I have proof to back up my claims</a></li>
+                    </ul>
+                </aside>
             </div>
         </div>
+
+        <!-- Copyright, Tech stuff, acknowledgements -->
+        <footer>
+            <small>Copyright © 2013, Joshua Moore Frankel</small>
+        </footer>
 
         <!-- Google Authorship -->
         <a class="hidden" href="https://plus.google.com/102867762609354182181?rel=author">Google</a>

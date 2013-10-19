@@ -1,10 +1,12 @@
-
+h2 {
+    @extend %inverse-header;
+}
 .testimonial-single {
 
     blockquote {
-        background: rgba(#fff, 1);
+        // background: rgba(#fff, 1);
         border: none;
-        @include border-radius(5px);
+        // @include border-radius(5px);
     }
 }
 

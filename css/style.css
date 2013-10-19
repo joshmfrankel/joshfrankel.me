@@ -1,5 +1,13 @@
 @charset "UTF-8";
 /**
+ * Placeholders
+ */
+#testimonial h2, #Hire-Me h2 {
+  color: #fff;
+  text-shadow: -2px -1px 0 rgba(115, 114, 115, 0.56);
+}
+
+/**
  * Variables
  */
 @font-face {
@@ -22,6 +30,10 @@
   background: -o-linear-gradient(top, #7cb8cc 61%, #75adc0 100%);
   background: -ms-linear-gradient(top, #7cb8cc 61%, #75adc0 100%);
   background: linear-gradient(to bottom, #7cb8cc 61%, #75adc0 100%);
+}
+
+.section-offset {
+  margin-top: 50px;
 }
 
 /**
@@ -6249,29 +6261,97 @@ td.visible-print {
  * base.scss
  */
 body {
+  background: url(../img/bg-texture.jpg) 0 0 repeat;
   padding-top: 50px;
 }
 
 h1 {
   font-family: "Franchise", "Impact", sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Franchise", "Impact", sans-serif;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
 }
 
 mark {
-  padding: 2px 2px 0 2px;
-  border-radius: 3px;
-  background: #7cb8cc;
-  color: #fff;
-  cursor: pointer;
-  text-shadow: -1px -1px 0 rgba(115, 114, 115, 0.16);
+  background: none;
+  color: #6aaec5;
+  text-shadow: 0px 1px 0px #ffffff;
 }
 mark:hover {
-  background: #6aaec5;
+  cursor: pointer;
+  border-bottom: 1px dashed #7cb8cc;
+}
+
+a {
+  color: #7cb8cc;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+a:hover {
+  color: ligthen(#7cb8cc, 7%);
+}
+
+p,
+li {
+  color: #737273;
+}
+
+p {
+  font-size: 14px;
+  font: 400 1.4rem/2.2 "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.page-header {
+  border: none;
+}
+.page-header:after {
+  border-top: 1px solid rgba(115, 114, 115, 0.3);
+  border-bottom: 1px solid #fff;
+  content: '';
+  width: 100%;
+  display: inline-block;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+header .container {
+  padding: 0 15px;
+}
+
+.jumbotron {
+  background-color: transparent;
 }
 
 /**
  * Nav
  * nav.scss
  */
+header nav.navbar {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+header nav .navbar-brand {
+  position: absolute;
+  top: -35px;
+  z-index: 9;
+}
+header nav .navbar-brand img {
+  width: 100px;
+  height: auto;
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   header nav .navbar-collapse .glyphicon {
     display: none;
@@ -6283,55 +6363,285 @@ mark:hover {
   }
 }
 /**
+ * Home
+ * Home.scss
+ */
+#home h1 {
+  text-shadow: 0 1px 0 #fff;
+  color: #565656;
+}
+#home h1 .hero-job {
+  color: #7cb8cc;
+}
+#home h1 .hero-desc {
+  color: #7cb8cc;
+}
+#home h1 .hero-job,
+#home h1 .hero-desc {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#home h1 .hero-job:hover,
+#home h1 .hero-desc:hover {
+  color: #96c6d6;
+}
+#home .tagline {
+  font-style: italic;
+}
+
+/**
  * Testimonial
  * testimonial.scss
  */
 #testimonial .testimonial-single blockquote {
-  background: white;
   border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
 }
 
 /**
- * My Skillset
- * skillset.scss
+ * What I Do
  */
-.my-skillset .skill {
-  display: inline-block;
+#What-I-Do .excerpt-container {
+  margin-left: -15px;
+  margin-right: -15px;
 }
-.my-skillset .skill-php {
+#What-I-Do .excerpt-container:before, #What-I-Do .excerpt-container:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+#What-I-Do .excerpt-container:after {
+  clear: both;
+}
+#What-I-Do .excerpt-container .grid-left {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #What-I-Do .excerpt-container .grid-left {
+    float: left;
+    width: 50%;
+  }
+}
+#What-I-Do .excerpt-container .grid-right {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #What-I-Do .excerpt-container .grid-right {
+    float: left;
+    width: 50%;
+  }
+}
+#What-I-Do .my-skillset {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#What-I-Do .my-skillset:before, #What-I-Do .my-skillset:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+#What-I-Do .my-skillset:after {
+  clear: both;
+}
+#What-I-Do .my-skillset .skillset-col-1 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  #What-I-Do .my-skillset .skillset-col-1 {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #What-I-Do .my-skillset .skillset-col-1 {
+    float: left;
+    width: 33.33333%;
+  }
+}
+#What-I-Do .my-skillset .skillset-col-2 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  #What-I-Do .my-skillset .skillset-col-2 {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #What-I-Do .my-skillset .skillset-col-2 {
+    float: left;
+    width: 33.33333%;
+  }
+}
+#What-I-Do .my-skillset .skillset-col-3 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  #What-I-Do .my-skillset .skillset-col-3 {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #What-I-Do .my-skillset .skillset-col-3 {
+    float: left;
+    width: 33.33333%;
+  }
+}
+#What-I-Do .my-skillset .skill {
+  display: block;
+}
+#What-I-Do .my-skillset .skill-php {
   color: #9999cc;
 }
-.my-skillset .skill-css {
+#What-I-Do .my-skillset .skill-css {
   color: #669517;
 }
-.my-skillset .skill-jquery {
+#What-I-Do .my-skillset .skill-jquery {
   color: #0769AD;
 }
-.my-skillset .skill-sass {
+#What-I-Do .my-skillset .skill-sass {
   color: #ce4dd6;
 }
-.my-skillset .skill-rails {
+#What-I-Do .my-skillset .skill-rails {
   color: #981a21;
 }
-.my-skillset .skill-wordpress {
+#What-I-Do .my-skillset .skill-wordpress {
   color: #222;
 }
-.my-skillset .skill-git {
+#What-I-Do .my-skillset .skill-git {
   color: #f14e32;
 }
-.my-skillset .skill-responsive {
+#What-I-Do .my-skillset .skill-responsive {
   color: #fdc328;
 }
-.my-skillset .skill-unit-testing {
+#What-I-Do .my-skillset .skill-unit-testing {
   color: #f5f5f5;
 }
-.my-skillset .skill-psr {
+#What-I-Do .my-skillset .skill-psr {
   color: #9ddcff;
+}
+
+/**
+ * My Work
+ */
+#My-Work .carousel {
+  border: 4px solid #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+#My-Work .carousel .carousel-caption {
+  bottom: 0;
+  background: white;
+  width: 100%;
+  left: 0;
+}
+#My-Work .carousel .carousel-indicators {
+  bottom: 0;
+}
+#My-Work .carousel .carousel-indicators li {
+  border: 1px solid #ccc;
+}
+#My-Work .carousel .carousel-indicators li.active {
+  background: #000;
+}
+
+/**
+ * Hire Me
+ */
+#Hire-Me .social-icon {
+  position: relative;
+  left: -36px;
+}
+#Hire-Me .social-icon a {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 5px 6px 50px;
+  position: relative;
+}
+#Hire-Me .social-icon:hover::before {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+#Hire-Me .social-icon::before {
+  content: '';
+  background: url(../img/sprites.png) 0 0 no-repeat;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  position: relative;
+  top: 10px;
+  left: 36px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+#Hire-Me .social-github::before {
+  background-position: 0 0;
+}
+#Hire-Me .social-wordpress::before {
+  background-position: -42px 0;
+}
+#Hire-Me .social-stackoverflow::before {
+  background-position: -84px 0;
+}
+#Hire-Me .social-linkedin::before {
+  background-position: -126px 0;
+}
+#Hire-Me .social-twitter::before {
+  background-position: -168px 0;
+}
+#Hire-Me .social-email::before {
+  background-position: -210px 0;
+}
+#Hire-Me .social-resume::before {
+  background-position: -252px 0;
 }
 
 .left-and-right {

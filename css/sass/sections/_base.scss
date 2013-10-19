@@ -1,19 +1,65 @@
 body {
+    background: url(../img/bg-texture.jpg) 0 0 repeat;
     padding-top:50px;
 }
 
 h1 {
     font-family: $franchise;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: $franchise;
+    text-transform: uppercase;
+}
+ul {
+    list-style: none;
 }
 mark {
-    padding: 2px 2px 0 2px;
-    border-radius: 3px;
-    background: $brand-primary;
-    color:#fff;
-    cursor:pointer;
-    text-shadow: -1px -1px 0 rgba(115,114,115,0.16);
+    background: none;
+    color:darken($brand-primary, 5%);
+    text-shadow: 0px 1px 0px #ffffff;
 
     &:hover {
-        background: darken($brand-primary, 5%);
+        cursor: pointer;
+        border-bottom: 1px dashed $brand-primary;
     }
+}
+a {
+    color:$brand-primary;
+    text-decoration: none;
+    @include transition(all .5s);
+
+    &:hover {
+        color:ligthen($brand-primary, 7%);
+    }
+}
+p,
+li {
+    color: $gray;
+}
+p {
+    font-size: 14px;
+    font: 400 1.4rem/2.2 $font-family-base;
+}
+
+// Bootstrap Overrides
+.page-header {
+    border:none;
+
+    &:after {
+        border-top: 1px solid rgba(115,114,115,0.3);
+        border-bottom: 1px solid #fff;
+        content:'';
+        width:100%;
+        display: inline-block;
+    }
+}
+.container {
+    padding:0 20px;
+}
+header .container {
+    padding:0 15px;
+}
+.jumbotron {
+    background-color:transparent;
 }

@@ -2,6 +2,11 @@
 @import "compass";
 
 /**
+ * Placeholders
+ */
+@import "core/placeholder.scss";
+
+/**
  * Variables
  */
 @import "core/variables.scss";
@@ -29,6 +34,14 @@
 @import "sections/nav.scss";
 
 /**
+ * Home
+ * Home.scss
+ */
+#home {
+  @import "sections/home.scss";
+}
+
+/**
  * Testimonial
  * testimonial.scss
  */
@@ -37,14 +50,25 @@
 }
 
 /**
- * My Skillset
- * skillset.scss
+ * What I Do
  */
-
-.my-skillset {
-    @import "sections/skillset.scss";
+#What-I-Do {
+    @import "sections/what-i-do.scss";
 }
 
+/**
+ * My Work
+ */
+#My-Work {
+    @import "sections/work.scss";
+}
+
+/**
+ * Hire Me
+ */
+#Hire-Me {
+    @import "sections/hire.scss";
+}
 
 
 .left-and-right {

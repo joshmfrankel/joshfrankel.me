@@ -23,3 +23,22 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+function scrollToAnchor(id) {
+
+    // Calc header height
+    var headerHeight = parseFloat($('header .navbar').css('height'));
+
+    // Force blug bg to be at top after scroll
+    // if (id === '#hire-me') {
+    //     headerHeight = headerHeight - 30;
+    // }
+
+    // ScrollTop
+    $('html,body').stop().animate({
+        scrollTop: $(id).offset().top - headerHeight
+    },
+    {
+        duration: 'slow',
+        easing: 'swing'
+    });
+}

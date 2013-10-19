@@ -1,0 +1,74 @@
+.excerpt-container {
+    @include make-row();
+
+    .grid-left {
+        @include make-md-column(6);
+    }
+    .grid-right {
+        @include make-md-column(6);
+    }
+}
+.my-skillset {
+    @include make-row();
+    margin-left:0;
+    margin-right: 0;
+    .skillset-col-1 {
+
+        @include make-sm-column(6);
+        @include make-md-column(4);
+    }
+    .skillset-col-2 {
+
+        @include make-sm-column(6);
+        @include make-md-column(4);
+    }
+    .skillset-col-3 {
+
+        @include make-sm-column(6);
+        @include make-md-column(4);
+    }
+    .skill {
+        // color:#fff;
+        // display: block;
+        // font-weight: 700;
+        // width: 150px;
+        // height: 150px;
+        // border: 3px solid #777;
+        // border-radius: 75px;
+        // vertical-align: middle;
+        // text-align: center;
+        // line-height: 150px;
+        display: block;
+    }
+    .skill-php {
+        color: #9999cc;
+    }
+    .skill-css {
+        color: #669517;
+    }
+    .skill-jquery {
+        color: #0769AD;
+    }
+    .skill-sass {
+        color: #ce4dd6;
+    }
+    .skill-rails {
+        color: #981a21;
+    }
+    .skill-wordpress {
+        color: #222;
+    }
+    .skill-git {
+        color: #f14e32;
+    }
+    .skill-responsive {
+        color: #fdc328;
+    }
+    .skill-unit-testing {
+        color: #f5f5f5;
+    }
+    .skill-psr {
+        color: #9ddcff;
+    }
+
+}
