@@ -3,8 +3,8 @@ $(document).ready(function() {
 
     // Scrollspy
     $('body').scrollspy({
-        target: 'header nav.navbar',
-        offset: 150
+        target: 'header nav.navbar .container',
+        offset: 75
     });
 
 
@@ -22,8 +22,13 @@ $(document).ready(function() {
         scrollToAnchor(hash);
     });
 
-    // Tooltips
-    $('.tooltip-hook').tooltip();
+    var width = $(window).width();
+
+    // Tooltips only load if the site starts desktop
+    if (width > 753) {
+        $('.tooltip-hook').tooltip();
+    }
+
 
     // TODO: disable menu tooltip on responsive
 

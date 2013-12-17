@@ -6397,6 +6397,9 @@ header nav .navbar-brand img {
  * Testimonial
  * testimonial.scss
  */
+#testimonial {
+  height: 350px;
+}
 #testimonial .testimonial-single blockquote {
   background: rgba(255, 255, 255, 0.15);
   border: none;
@@ -6408,10 +6411,8 @@ header nav .navbar-brand img {
   font-weight: 700;
   color: #fff;
 }
-@media (min-width: 768px) {
-  #testimonial .testimonial-single {
-    width: 300px;
-  }
+#testimonial .testimonial-container {
+  margin-top: 25px;
 }
 
 /**

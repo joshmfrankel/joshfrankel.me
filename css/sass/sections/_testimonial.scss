@@ -17,10 +17,15 @@ h2 {
     }
 
 }
+.testimonial-container {
+    margin-top:25px;
+}
+
+
 
 @media (min-width: $screen-sm) {
     .testimonial-single {
-        width: 300px;
+
         &.testimonial-1 {
 
         }
