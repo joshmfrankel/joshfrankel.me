@@ -42,3 +42,16 @@ function scrollToAnchor(id) {
         easing: 'swing'
     });
 }
+
+
+// var divs = $('div[id^="content-"]').hide(),
+//     i = 0;
+
+// (function cycle() {
+//     divs.eq(i).fadeIn(400)
+//               .delay(5000)
+//               .fadeOut(400, cycle);
+
+//     i = ++i % divs.length; // increment i,
+//                            //   and reset to 0 when it equals divs.length
+// })();

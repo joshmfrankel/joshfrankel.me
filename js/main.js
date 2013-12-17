@@ -7,12 +7,7 @@ $(document).ready(function() {
         offset: 150
     });
 
-    // Tooltips
-    $('.tooltip-hook').tooltip();
 
-
-
-    // TODO: disable menu tooltip on responsive
 
     // Quick Scroll
     $('header .navbar a, .jump-link a').on('click', function(e) {
@@ -27,4 +22,29 @@ $(document).ready(function() {
         scrollToAnchor(hash);
     });
 
+    // Tooltips
+    $('.tooltip-hook').tooltip();
+
+    // TODO: disable menu tooltip on responsive
+
+
+    // Cycle
+    // todo turn into plugin
+    var divs = $('#testimonial .testimonial-single').hide(),
+    i = 0;
+
+    (function cycle() {
+
+        divs.eq(i).fadeIn(400)
+                  .delay(5000)
+                  .fadeOut(400, cycle);
+
+        i = ++i % divs.length;
+
+    })();
+
 });
+
+
+
+

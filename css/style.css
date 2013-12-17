@@ -6312,6 +6312,10 @@ p {
 .page-header {
   border: none;
 }
+.page-header h2 {
+  font-size: 40px;
+  font-size: 4rem;
+}
 .page-header:after {
   border-top: 1px solid rgba(115, 114, 115, 0.3);
   border-bottom: 1px solid #fff;
@@ -6394,7 +6398,20 @@ header nav .navbar-brand img {
  * testimonial.scss
  */
 #testimonial .testimonial-single blockquote {
+  background: rgba(255, 255, 255, 0.15);
   border: none;
+}
+#testimonial .testimonial-single blockquote p {
+  color: #fff;
+}
+#testimonial .testimonial-single blockquote small {
+  font-weight: 700;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #testimonial .testimonial-single {
+    width: 300px;
+  }
 }
 
 /**

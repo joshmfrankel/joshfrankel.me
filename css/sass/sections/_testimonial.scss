@@ -4,9 +4,25 @@ h2 {
 .testimonial-single {
 
     blockquote {
-        // background: rgba(#fff, 1);
+        background: rgba(255,255,255, 0.15);
         border: none;
-        // @include border-radius(5px);
+
+        p {
+            color:#fff;
+        }
+        small {
+            font-weight: 700;
+            color:#fff;
+        }
     }
+
 }
 
+@media (min-width: $screen-sm) {
+    .testimonial-single {
+        width: 300px;
+        &.testimonial-1 {
+
+        }
+    }
+}
