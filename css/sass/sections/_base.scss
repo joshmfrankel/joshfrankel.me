@@ -49,14 +49,17 @@ p {
     h2 {
         font-size: 40px;
         font-size: 4rem;
+        text-shadow: 0 1px #fff;
     }
 
+    position: relative;
     &:after {
         border-top: 1px solid rgba(115,114,115,0.3);
         border-bottom: 1px solid #fff;
         content:'';
         width:100%;
         display: inline-block;
+        position: absolute;
     }
 }
 .container {
