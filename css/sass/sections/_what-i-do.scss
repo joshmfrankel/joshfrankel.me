@@ -2,16 +2,18 @@
     @include make-row();
 
     .grid-left {
-        @include make-md-column(6);
+        @include make-md-column(5.5);
     }
     .grid-right {
-        @include make-md-column(6);
+        @include make-md-column(5.5);
+        @include make-md-column-push(1);
     }
 }
 .my-skillset {
     @include make-row();
     margin-left:0;
     margin-right: 0;
+    margin-top:15px;
     .skillset-col-1 {
 
         @include make-sm-column(6);

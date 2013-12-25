@@ -6326,6 +6326,7 @@ p {
 
 .page-header {
   border: none;
+  margin-bottom: 20px;
   position: relative;
 }
 .page-header h2 {
@@ -6467,7 +6468,7 @@ header nav .navbar-brand img:hover {
 @media (min-width: 992px) {
   #What-I-Do .excerpt-container .grid-left {
     float: left;
-    width: 50%;
+    width: 45.83333%;
   }
 }
 #What-I-Do .excerpt-container .grid-right {
@@ -6479,7 +6480,12 @@ header nav .navbar-brand img:hover {
 @media (min-width: 992px) {
   #What-I-Do .excerpt-container .grid-right {
     float: left;
-    width: 50%;
+    width: 45.83333%;
+  }
+}
+@media (min-width: 992px) {
+  #What-I-Do .excerpt-container .grid-right {
+    left: 8.33333%;
   }
 }
 #What-I-Do .my-skillset {
@@ -6487,6 +6493,7 @@ header nav .navbar-brand img:hover {
   margin-right: -15px;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 15px;
 }
 #What-I-Do .my-skillset:before, #What-I-Do .my-skillset:after {
   content: " ";
@@ -6669,9 +6676,12 @@ header nav .navbar-brand img:hover {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   #My-Experience .experience-block {
-    width: 355px;
+    width: 295px;
     float: left;
     margin-right: 20px;
+  }
+  #My-Experience .experience-block:nth-child(3n+1) {
+    margin-right: 0;
   }
 }
 @media (min-width: 1200px) {
