@@ -16,6 +16,12 @@ header nav {
         img {
             width:100px;
             height: auto;
+
+            @include transition(all .5s);
+
+            &:hover {
+                @include transform(rotate(7deg));
+            }
         }
     }
 }

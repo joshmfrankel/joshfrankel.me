@@ -1,15 +1,19 @@
 .experience-block {
-    width:360px;
+
     height: 200px;
     display: block;
-    float:left;
-    margin-right: 25px;
     position: relative;
+    color: #454545;
+
+
 
     @extend .well;
 
-    &:nth-child(3n+1) {
-        margin-right: 0;
+    @include transition(all .5s);
+
+    &:hover {
+        color: $brand-primary;
+        cursor: pointer;
     }
 
     .glyphicon {
@@ -27,5 +31,17 @@
         left: 0;
         right: 0;
         position: absolute;
+    }
+}
+
+@media (min-width: $screen-sm) {
+    .experience-block {
+        width:360px;
+        margin-right: 25px;
+        float:left;
+
+        &:nth-child(3n+1) {
+            margin-right: 0;
+        }
     }
 }
