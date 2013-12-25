@@ -34,7 +34,27 @@
     }
 }
 
-@media (min-width: $screen-sm) {
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+    .experience-block {
+        width:345px;
+        float:left;
+        margin-right: 20px;
+
+        &:nth-child(2n+1) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+    .experience-block {
+        width:355px;
+        float:left;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: $screen-lg) {
     .experience-block {
         width:360px;
         margin-right: 25px;
@@ -45,3 +65,8 @@
         }
     }
 }
+// @media (min-width: $screen-md) and (max-width: $screen-lg) {
+//     .experience-block {
+//         width:300px;
+//     }
+// }

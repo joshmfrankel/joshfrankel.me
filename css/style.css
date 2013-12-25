@@ -6657,7 +6657,24 @@ header nav .navbar-brand img:hover {
   right: 0;
   position: absolute;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
+  #My-Experience .experience-block {
+    width: 345px;
+    float: left;
+    margin-right: 20px;
+  }
+  #My-Experience .experience-block:nth-child(2n+1) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #My-Experience .experience-block {
+    width: 355px;
+    float: left;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
   #My-Experience .experience-block {
     width: 360px;
     margin-right: 25px;
