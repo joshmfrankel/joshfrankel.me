@@ -372,18 +372,43 @@
                 <div class="page-header">
                     <h2>Hire Me! <small>You'll be glad you did</small></h2>
                 </div>
-                <aside>
-                    <h2>Reasons to Hire Me</h2>
-                    <ul>
-                        <li class="social-icon social-github"><a href="https://github.com/joshmfrankel">I have no (git) commit hangups</a></li>
-                        <li class="social-icon social-wordpress"><a href="http://blog.joshmfrankel.com/">I share what I learn</a></li>
-                        <li class="social-icon social-stackoverflow"><a href="http://stackoverflow.com/users/906974/josh-frankel">I give back to the community</a></li>
-                        <li class="social-icon social-linkedin"><a href="http://www.linkedin.com/in/joshmfrankel">I take professionalism seriously</a></li>
-                        <li class="social-icon social-twitter"><a href="https://twitter.com/Joshmfrankel">I like to be social</a></li>
-                        <li class="social-icon social-email"><a href="mailto:josh@joshfrankel.me">I am easy to get a hold of</a></li>
-                        <li class="social-icon social-resume"><a href="/docs/code-sample.pdf">I have proof to back up my claims</a></li>
-                    </ul>
-                </aside>
+
+                <div class="row">
+                    <form class="hire-me-form col-md-6" novalidate="novalidate">
+                        <div class="form-error">
+                        </div>
+                        <div class="form-success">
+                            Your msg has been sent
+                        </div>
+
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" maxlength="50" required="">
+
+                        <label for="question">How may I help you?</label>
+                        <textarea id="question" name="question" placeholder="I would like to hire Josh!"></textarea>
+
+                        <label for="math">2+3=?<span class="handdrawn-no-robots"></span></label>
+                        <input type="number" name="math" id="math" min="0" max="50" required="">
+
+                        <input type="hidden" name="phone" id="phone">
+                        <input type="submit" class="submit-btn" value="Send to Josh">
+                    </form>
+                    <aside class="col-md-offset-2 col-md-4">
+                        <h2>Reasons to Hire Me</h2>
+                        <ul>
+                            <li class="social-icon social-github"><a href="https://github.com/joshmfrankel">I have no (git) commit hangups</a></li>
+                            <li class="social-icon social-wordpress"><a href="http://blog.joshmfrankel.com/">I share what I learn</a></li>
+                            <li class="social-icon social-stackoverflow"><a href="http://stackoverflow.com/users/906974/josh-frankel">I give back to the community</a></li>
+                            <li class="social-icon social-linkedin"><a href="http://www.linkedin.com/in/joshmfrankel">I take professionalism seriously</a></li>
+                            <li class="social-icon social-twitter"><a href="https://twitter.com/Joshmfrankel">I like to be social</a></li>
+                            <li class="social-icon social-email"><a href="mailto:josh@joshfrankel.me">I am easy to get a hold of</a></li>
+                            <li class="social-icon social-resume"><a href="/docs/code-sample.pdf">I have proof to back up my claims</a></li>
+                        </ul>
+                    </aside>
+                </div>
             </div>
         </div>
 

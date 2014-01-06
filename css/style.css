@@ -6780,24 +6780,58 @@ header nav .navbar-brand img:hover {
 /**
  * Hire Me
  */
-#Hire-Me .social-icon {
+#Hire-Me form label {
+  color: #fff;
+  font-size: 20px;
+  font: 400 2rem/1 "Franchise", "Impact", sans-serif;
+  display: block;
+  text-transform: uppercase;
+}
+#Hire-Me form input[type=text],
+#Hire-Me form input[type=email],
+#Hire-Me form input[type=number],
+#Hire-Me form textarea {
+  border: 0;
+  color: #919191;
+  font-size: 14px;
+  font-size: 1.4rem;
+  width: 100%;
+  -webkit-box-shadow: inset 1px 1.5px 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 1px 1.5px 5px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+#Hire-Me aside ul {
+  padding-left: 0;
+}
+#Hire-Me aside .social-icon {
   position: relative;
   left: -36px;
 }
-#Hire-Me .social-icon a {
+#Hire-Me aside .social-icon a {
   color: #fff;
   display: inline-block;
   padding: 5px 5px 6px 50px;
   position: relative;
+  text-shadow: none;
 }
-#Hire-Me .social-icon:hover::before {
+#Hire-Me aside .social-icon a:hover {
+  border: none;
+  font-weight: 700;
+}
+#Hire-Me aside .social-icon:hover::before {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
   -o-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-#Hire-Me .social-icon::before {
+#Hire-Me aside .social-icon::before {
   content: '';
   background: url(../img/sprites.png) 0 0 no-repeat;
   display: inline-block;
@@ -6817,25 +6851,25 @@ header nav .navbar-brand img:hover {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-#Hire-Me .social-github::before {
+#Hire-Me aside .social-github::before {
   background-position: 0 0;
 }
-#Hire-Me .social-wordpress::before {
+#Hire-Me aside .social-wordpress::before {
   background-position: -42px 0;
 }
-#Hire-Me .social-stackoverflow::before {
+#Hire-Me aside .social-stackoverflow::before {
   background-position: -84px 0;
 }
-#Hire-Me .social-linkedin::before {
+#Hire-Me aside .social-linkedin::before {
   background-position: -126px 0;
 }
-#Hire-Me .social-twitter::before {
+#Hire-Me aside .social-twitter::before {
   background-position: -168px 0;
 }
-#Hire-Me .social-email::before {
+#Hire-Me aside .social-email::before {
   background-position: -210px 0;
 }
-#Hire-Me .social-resume::before {
+#Hire-Me aside .social-resume::before {
   background-position: -252px 0;
 }
 
