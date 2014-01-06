@@ -6635,6 +6635,10 @@ header nav .navbar-brand img:hover {
   font-size: 12px;
   color: #888;
 }
+.my-blog h3 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
 
 /**
  * My Work
@@ -6692,24 +6696,42 @@ header nav .navbar-brand img:hover {
   right: 0;
   position: absolute;
 }
-#My-Experience .experience-block .experience-details {
-  visibility: hidden;
+#My-Experience .experience-block .experience-caption {
+  background: rgba(124, 184, 204, 0.88);
   position: absolute;
+  opacity: 0;
   top: 0;
   left: 0;
-  width: 295px;
+  width: 100%;
   height: 200px;
-  color: #fff;
-}
-#My-Experience .experience-block:hover {
-  color: #fff;
-  background: #7cb8cc;
-  cursor: pointer;
+  padding: 5px 10px;
   -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 700ms ease;
+  -moz-transition: all 700ms ease;
+  -ms-transition: all 700ms ease;
+  -o-transition: all 700ms ease;
+  transition: all 700ms ease;
 }
-#My-Experience .experience-block:hover .experience-details {
-  visibility: visible;
+#My-Experience .experience-block .experience-caption p,
+#My-Experience .experience-block .experience-caption h5,
+#My-Experience .experience-block .experience-caption li {
+  color: #fff;
+  font-size: 13px;
+  text-shadow: none;
+}
+#My-Experience .experience-block .experience-caption li {
+  margin-bottom: 5px;
+}
+#My-Experience .experience-block .experience-caption p {
+  margin-bottom: 5px;
+}
+#My-Experience .experience-block .experience-caption ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+#My-Experience .experience-block:hover .experience-caption, #My-Experience .experience-block:active .experience-caption {
+  opacity: 1;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   #My-Experience .experience-block {
