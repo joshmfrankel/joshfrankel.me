@@ -51,6 +51,10 @@
   top: 0;
 }
 
+.inverse p {
+  text-shadow: none;
+}
+
 /**
  * Bootstrap
  */
@@ -6286,8 +6290,17 @@ h1 {
 }
 
 h2 {
+  color: #454545;
   font-family: "Franchise", "Impact", sans-serif;
   text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Franchise", "Impact", sans-serif;
+  font-size: 30px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #555;
 }
 
 ul {
@@ -6322,6 +6335,8 @@ li {
 p {
   font-size: 14px;
   font: 400 1.4rem/2.2 "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 0px 1px #efefef;
+  margin-bottom: 15px;
 }
 
 .page-header {
@@ -6605,6 +6620,23 @@ header nav .navbar-brand img:hover {
 }
 
 /**
+ * What I Write (my blog)
+ */
+.my-blog h1 {
+  font-size: 25px;
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+}
+.my-blog time {
+  margin-left: 5px;
+}
+.my-blog .glyphicon {
+  font-size: 12px;
+  color: #888;
+}
+
+/**
  * My Work
  */
 #My-Work .carousel {
@@ -6645,10 +6677,6 @@ header nav .navbar-brand img:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-#My-Experience .experience-block:hover {
-  color: #7cb8cc;
-  cursor: pointer;
-}
 #My-Experience .experience-block .glyphicon {
   font-size: 40px;
   display: block;
@@ -6663,6 +6691,25 @@ header nav .navbar-brand img:hover {
   left: 0;
   right: 0;
   position: absolute;
+}
+#My-Experience .experience-block .experience-details {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 295px;
+  height: 200px;
+  color: #fff;
+}
+#My-Experience .experience-block:hover {
+  color: #fff;
+  background: #7cb8cc;
+  cursor: pointer;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+#My-Experience .experience-block:hover .experience-details {
+  visibility: visible;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   #My-Experience .experience-block {

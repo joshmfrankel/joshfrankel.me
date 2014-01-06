@@ -11,10 +11,7 @@
 
     @include transition(all .5s);
 
-    &:hover {
-        color: $brand-primary;
-        cursor: pointer;
-    }
+
 
     .glyphicon {
         font-size: 40px;
@@ -31,6 +28,29 @@
         left: 0;
         right: 0;
         position: absolute;
+    }
+
+    .experience-details {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 295px;
+        height: 200px;
+        color:#fff;
+
+    }
+
+    &:hover {
+        color: #fff;
+        background: $brand-primary;
+        cursor: pointer;
+        -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    &:hover .experience-details {
+        visibility: visible;
     }
 }
 
