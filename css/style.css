@@ -6638,6 +6638,19 @@ header nav .navbar-brand img:hover {
 .my-blog h3 {
   margin-top: 35px;
   margin-bottom: 15px;
+  position: relative;
+  text-align: center;
+}
+.my-blog h3:after {
+  border-top: 1px solid rgba(115, 114, 115, 0.3);
+  border-bottom: 1px solid #fff;
+  content: '';
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 13px;
+  z-index: -1;
 }
 
 /**
