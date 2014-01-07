@@ -51,6 +51,10 @@ p {
     text-shadow: 0px 1px #efefef;
     margin-bottom: 15px;
 }
+hr {
+    border-top: 1px solid rgba(115, 114, 115, 0.3);
+    border-bottom: 1px solid #fff;
+}
 
 // Bootstrap Overrides
 .page-header {

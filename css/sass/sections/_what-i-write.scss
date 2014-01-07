@@ -17,15 +17,51 @@ h3 {
     margin-bottom: 15px;
     position: relative;
     text-align: center;
+    &:before,
     &:after {
         border-top: 1px solid rgba(115, 114, 115, 0.3);
         border-bottom: 1px solid #fff;
         content: '';
-        width: 100%;
         display: inline-block;
         position: absolute;
-        left: 0;
         top: 13px;
         z-index: -1;
+        width:25%;
+    }
+    &:before {
+        left: 0;
+    }
+    &:after {
+        right:0;
+    }
+}
+
+// Small to med
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+    h3 {
+        &:before,
+        &:after {
+            width:35%;
+        }
+    }
+}
+
+// Med to large
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+    h3 {
+        &:before,
+        &:after {
+            width:38%;
+        }
+    }
+}
+
+// Large
+@media (min-width: $screen-lg) {
+    h3 {
+        &:before,
+        &:after {
+            width:40%;
+        }
     }
 }
