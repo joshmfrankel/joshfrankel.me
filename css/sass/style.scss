@@ -46,7 +46,7 @@
  * testimonial.scss
  */
 #testimonial {
-    height:350px;
+    min-height: 350px;
     @import "sections/testimonial.scss";
 }
 
@@ -84,8 +84,14 @@
  */
 #Hire-Me {
     @import "sections/hire.scss";
+    padding-top:50px;
+    padding-bottom: 100px;
 }
 
+/**
+ * Foooter
+ */
+@import "sections/footer.scss";
 
 .left-and-right {
   @include make-row();

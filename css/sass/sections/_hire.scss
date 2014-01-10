@@ -1,14 +1,31 @@
-
 h2 {
     @extend %inverse-header;
+}
+.page-header {
+
+    h2 {
+        font-size: 100px;
+        font-size: 10rem;
+
+        small {
+            color: #fff;
+            font-size:24px;
+            letter-spacing: 1px;
+        }
+    }
+
+    &:after {
+        display: none;
+    }
 }
 form {
 
     label {
         color:#fff;
-        font-size: 20px;
-        font: 400 2.0rem/1 $franchise;
+        font-size: 30px;
+        font: 400 3.0rem/1 $franchise;
         display:block;
+        letter-spacing: 0.5px;
         text-transform: uppercase;
     }
     input[type=text],
@@ -30,6 +47,21 @@ form {
         box-sizing: border-box;
         margin-bottom: 25px;
     }
+    .form-success {
+        display: none;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        background: #a1ccda;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        right: -12px;
+        top: 0;
+        border-right: 1px solid #4699b5;
+    }
 
 }
 aside {
@@ -49,10 +81,11 @@ aside {
         padding: 5px 5px 6px 50px;
         position: relative;
         text-shadow:none;
+        font-size: 16px;
+        font-size: 1.6rem;
 
         &:hover {
             border:none;
-            font-weight: 700;
         }
     }
     .social-icon:hover::before {

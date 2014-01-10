@@ -15,6 +15,20 @@
         background: white;
         width: 100%;
         left: 0;
+        position: relative;
+        padding-left:30px;
+        padding-right: 100px;
+
+        h4,
+        p {
+            text-align: left;
+        }
+
+        h4 {
+            color: #565656;
+            text-shadow: none;
+            font-weight: 700;
+        }
     }
     .carousel-indicators {
         bottom:0;

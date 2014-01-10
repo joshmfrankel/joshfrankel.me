@@ -64,6 +64,10 @@
             list-style: disc;
             padding-left: 20px;
         }
+        a {
+            color:#fff;
+            font-weight: 700;
+        }
     }
 
     &:hover,
@@ -82,7 +86,7 @@
         float:left;
         margin-right: 20px;
 
-        &:nth-child(2n+1) {
+        &:nth-child(2n+2) {
             margin-right: 0;
         }
     }
@@ -94,7 +98,7 @@
         float:left;
         margin-right: 20px;
 
-        &:nth-child(3n+1) {
+        &:nth-child(3n+2) {
             margin-right: 0;
         }
     }
@@ -106,7 +110,7 @@
         margin-right: 25px;
         float:left;
 
-        &:nth-child(3n+1) {
+        &:nth-child(3n+2) {
             margin-right: 0;
         }
     }

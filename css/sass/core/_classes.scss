@@ -28,3 +28,30 @@
 .inverse p {
     text-shadow:none;
 }
+.script-arrow {
+    background: url(../img/layout/arrow-right-small.png) 0 0 no-repeat;
+    display: inline-block;
+    width:40px;
+    height: 20px;
+    position: relative;
+    top: 12px;
+    left: 5px;
+}
+.cf {
+    @extend %clearfix;
+}
+.fire {
+    color: $orange;
+
+    &:hover {
+        border-bottom: 1px dashed $orange;
+    }
+}
+.fire-tooltip {
+    .tooltip-inner {
+        background-color: $orange;
+    }
+    .tooltip-arrow {
+        border-top-color: $orange !important;
+    }
+}

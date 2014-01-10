@@ -7,14 +7,38 @@
     .grid-right {
         @include make-md-column(5.5);
         @include make-md-column-push(1);
+
+        h3 {
+            span {
+                font-size:20px;
+            }
+        }
     }
 }
-.my-skills p {
-    font-size:20px;
-    font-size:2rem;
-    margin-right: 20px;
-    display: inline-block;
+.my-skills {
+    @include make-row();
+    margin-left:0;
+    margin-right: 0;
+
+    p {
+        margin-right: 20px;
+        display: inline-block;
+        width:100%;
+    }
+    span {
+        color:$brand-primary;
+    }
+
 }
+
+@media (min-width: $screen-md) {
+    .my-skills {
+        margin-right: -15px;
+        padding-left:10px;
+        padding-right: 10px;
+    }
+}
+
 .my-skillset {
     @include make-row();
     margin-left:0;

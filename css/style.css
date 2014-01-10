@@ -2,6 +2,14 @@
 /**
  * Placeholders
  */
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+}
+.cf:after {
+  clear: both;
+}
+
 #testimonial h2, #Hire-Me h2 {
   color: #fff;
   text-shadow: -2px -1px 0 rgba(115, 114, 115, 0.56);
@@ -15,6 +23,14 @@
   src: url("../css/fonts/Franchise-Bold-hinted.eot");
   src: url("../css/fonts/Franchise-Bold-hinted.eot?#iefix") format("embedded-opentype"), url("../css/fonts/Franchise-Bold-hinted.woff") format("woff"), url("../css/fonts/Franchise-Bold-hinted.ttf") format("truetype"), url("../css/fonts/Franchise-Bold-hinted.svg") format("svg");
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Daniel';
+  src: url("../css/fonts/daniel-webfont.eot");
+  src: url("../css/fonts/daniel-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/daniel-webfont.woff") format("woff"), url("../css/fonts/daniel-webfont.ttf") format("truetype"), url("../css/fonts/daniel-webfont.svg#DanielRegular") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -53,6 +69,30 @@
 
 .inverse p {
   text-shadow: none;
+}
+
+.script-arrow {
+  background: url(../img/layout/arrow-right-small.png) 0 0 no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  top: 12px;
+  left: 5px;
+}
+
+.fire {
+  color: #f0a829;
+}
+.fire:hover {
+  border-bottom: 1px dashed #f0a829;
+}
+
+.fire-tooltip .tooltip-inner {
+  background-color: #f0a829;
+}
+.fire-tooltip .tooltip-arrow {
+  border-top-color: #f0a829 !important;
 }
 
 /**
@@ -6303,6 +6343,13 @@ h3 {
   color: #555;
 }
 
+h6 {
+  font-family: "Daniel", "Monotype Corsiva", "Brush Script MT", "URW Chancery L", cursive, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 0 0 15px 25px;
+}
+
 ul {
   list-style: none;
 }
@@ -6440,24 +6487,109 @@ header nav .navbar-brand img:hover {
 #home .tagline {
   font-style: italic;
 }
+#home .jump-link {
+  display: inline-block;
+  margin-right: 15px;
+}
+#home .jump-link a {
+  text-shadow: none;
+}
+#home .hire .btn-primary {
+  background-color: #f0a829;
+  border-color: #e59810;
+}
+#home .hire .btn-primary:hover {
+  background-color: #e59810;
+}
+#home .hero-img img {
+  width: 175px;
+}
+@media (max-width: 992px) {
+  #home .jumbotron .container .cf {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  #home .jumbotron .container .cf .page-header {
+    -moz-box-ordinal-group: 2;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+  #home .jumbotron .container .cf .hero-img {
+    -moz-box-ordinal-group: 1;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+  #home .jumbotron .container .cf .hero-img img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  #home .hero-img img {
+    width: inherit;
+  }
+}
+@media (min-width: 992px) {
+  #home .page-header {
+    float: left;
+    padding-right: 0;
+  }
+  #home .hero-img {
+    float: right;
+    position: relative;
+    top: 59px;
+  }
+}
+@media (min-width: 1200px) {
+  #home .page-header {
+    padding-right: 150px;
+  }
+}
 
 /**
  * Testimonial
  * testimonial.scss
  */
 #testimonial {
-  height: 350px;
+  min-height: 350px;
+}
+#testimonial h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-top: 25px;
 }
 #testimonial .testimonial-single blockquote {
   background: rgba(255, 255, 255, 0.15);
   border: none;
+  position: relative;
 }
 #testimonial .testimonial-single blockquote p {
   color: #fff;
+  line-height: 2.2;
 }
 #testimonial .testimonial-single blockquote small {
   font-weight: 700;
   color: #fff;
+  position: absolute;
+  bottom: -40px;
+  right: 50px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+#testimonial .testimonial-single blockquote small:hover {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.75);
 }
 #testimonial .testimonial-container {
   margin-top: 25px;
@@ -6508,11 +6640,38 @@ header nav .navbar-brand img:hover {
     left: 8.33333%;
   }
 }
-#What-I-Do .my-skills p {
+#What-I-Do .excerpt-container .grid-right h3 span {
   font-size: 20px;
-  font-size: 2rem;
+}
+#What-I-Do .my-skills {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#What-I-Do .my-skills:before, #What-I-Do .my-skills:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+#What-I-Do .my-skills:after {
+  clear: both;
+}
+#What-I-Do .my-skills p {
   margin-right: 20px;
   display: inline-block;
+  width: 100%;
+}
+#What-I-Do .my-skills span {
+  color: #7cb8cc;
+}
+@media (min-width: 992px) {
+  #What-I-Do .my-skills {
+    margin-right: -15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 #What-I-Do .my-skillset {
   margin-left: -15px;
@@ -6703,6 +6862,18 @@ header nav .navbar-brand img:hover {
   background: white;
   width: 100%;
   left: 0;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 100px;
+}
+#My-Work .carousel .carousel-caption h4,
+#My-Work .carousel .carousel-caption p {
+  text-align: left;
+}
+#My-Work .carousel .carousel-caption h4 {
+  color: #565656;
+  text-shadow: none;
+  font-weight: 700;
 }
 #My-Work .carousel .carousel-indicators {
   bottom: 0;
@@ -6774,6 +6945,10 @@ header nav .navbar-brand img:hover {
   list-style: disc;
   padding-left: 20px;
 }
+#My-Experience .experience-block .experience-caption a {
+  color: #fff;
+  font-weight: 700;
+}
 #My-Experience .experience-block:hover .experience-caption, #My-Experience .experience-block:active .experience-caption {
   opacity: 1;
 }
@@ -6783,7 +6958,7 @@ header nav .navbar-brand img:hover {
     float: left;
     margin-right: 20px;
   }
-  #My-Experience .experience-block:nth-child(2n+1) {
+  #My-Experience .experience-block:nth-child(2n+2) {
     margin-right: 0;
   }
 }
@@ -6793,7 +6968,7 @@ header nav .navbar-brand img:hover {
     float: left;
     margin-right: 20px;
   }
-  #My-Experience .experience-block:nth-child(3n+1) {
+  #My-Experience .experience-block:nth-child(3n+2) {
     margin-right: 0;
   }
 }
@@ -6803,7 +6978,7 @@ header nav .navbar-brand img:hover {
     margin-right: 25px;
     float: left;
   }
-  #My-Experience .experience-block:nth-child(3n+1) {
+  #My-Experience .experience-block:nth-child(3n+2) {
     margin-right: 0;
   }
 }
@@ -6811,11 +6986,28 @@ header nav .navbar-brand img:hover {
 /**
  * Hire Me
  */
+#Hire-Me {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#Hire-Me .page-header h2 {
+  font-size: 100px;
+  font-size: 10rem;
+}
+#Hire-Me .page-header h2 small {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+#Hire-Me .page-header:after {
+  display: none;
+}
 #Hire-Me form label {
   color: #fff;
-  font-size: 20px;
-  font: 400 2rem/1 "Franchise", "Impact", sans-serif;
+  font-size: 30px;
+  font: 400 3rem/1 "Franchise", "Impact", sans-serif;
   display: block;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 #Hire-Me form input[type=text],
@@ -6837,6 +7029,20 @@ header nav .navbar-brand img:hover {
   box-sizing: border-box;
   margin-bottom: 25px;
 }
+#Hire-Me form .form-success {
+  display: none;
+}
+#Hire-Me form:after {
+  content: '';
+  display: block;
+  background: #a1ccda;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  right: -12px;
+  top: 0;
+  border-right: 1px solid #4699b5;
+}
 #Hire-Me aside h2 {
   margin-top: 10px;
 }
@@ -6853,10 +7059,11 @@ header nav .navbar-brand img:hover {
   padding: 5px 5px 6px 50px;
   position: relative;
   text-shadow: none;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 #Hire-Me aside .social-icon a:hover {
   border: none;
-  font-weight: 700;
 }
 #Hire-Me aside .social-icon:hover::before {
   -webkit-transform: rotate(360deg);
@@ -6905,6 +7112,13 @@ header nav .navbar-brand img:hover {
 }
 #Hire-Me aside .social-resume::before {
   background-position: -252px 0;
+}
+
+/**
+ * Foooter
+ */
+footer {
+  padding: 30px 0;
 }
 
 .left-and-right {

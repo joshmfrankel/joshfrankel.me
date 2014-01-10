@@ -27,7 +27,14 @@ $(document).ready(function() {
     // Tooltips only load if the site starts desktop
     if (width > 753) {
         $('.tooltip-hook').tooltip();
+
+
     }
+
+    $('.fire').hover(function() {
+        var test = $(this).next('.tooltip').addClass('fire-tooltip');
+        console.log(test);
+    });
 
 
     // TODO: disable menu tooltip on responsive
