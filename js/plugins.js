@@ -23,19 +23,28 @@
 }());
 
 // Place any jQuery/helper plugins in here.
-function scrollToAnchor(id) {
+function scrollToAnchor(id, offset) {
+
+
 
     // Calc header height
     var headerHeight = parseFloat($('header .navbar').css('height'));
 
     // Force blug bg to be at top after scroll
-    // if (id === '#hire-me') {
-    //     headerHeight = headerHeight - 30;
-    // }
+    if (id === '#Hire-Me' && offset !== 'undefined') {
+        offset = 40;
+    }
+
+    console.log(offset);
+
+    // Offset default
+    offset = (typeof offset === 'undefined') ? headerHeight : offset;
+
+
 
     // ScrollTop
     $('html,body').stop().animate({
-        scrollTop: $(id).offset().top - headerHeight
+        scrollTop: $(id).offset().top - offset
     },
     {
         duration: 'slow',

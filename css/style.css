@@ -4115,8 +4115,8 @@ input[type="button"].btn-block {
 }
 
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #454545;
+  border-color: #343434;
 }
 .navbar-default .navbar-brand {
   color: #777777;
@@ -4137,7 +4137,7 @@ input[type="button"].btn-block {
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555555;
-  background-color: #e7e7e7;
+  background-color: #343434;
 }
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
   color: #cccccc;
@@ -4154,7 +4154,7 @@ input[type="button"].btn-block {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e6e6e6;
+  border-color: #333333;
 }
 .navbar-default .navbar-nav > .dropdown > a:hover .caret,
 .navbar-default .navbar-nav > .dropdown > a:focus .caret {
@@ -4162,7 +4162,7 @@ input[type="button"].btn-block {
   border-bottom-color: #7cb8cc;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
+  background-color: #343434;
   color: #555555;
 }
 .navbar-default .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret {
@@ -4183,7 +4183,7 @@ input[type="button"].btn-block {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555555;
-    background-color: #e7e7e7;
+    background-color: #343434;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #cccccc;
@@ -6889,7 +6889,7 @@ header nav .navbar-brand img:hover {
  * Experience
  */
 #My-Experience .experience-block {
-  height: 200px;
+  height: 222px;
   display: block;
   position: relative;
   color: #454545;
@@ -6897,10 +6897,10 @@ header nav .navbar-brand img:hover {
   transition: all 0.5s;
 }
 #My-Experience .experience-block .glyphicon {
-  font-size: 40px;
+  font-size: 55px;
   display: block;
   margin-left: auto;
-  width: 40px;
+  width: 55px;
   margin-right: auto;
   margin-top: 30px;
 }
@@ -6918,7 +6918,7 @@ header nav .navbar-brand img:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 222px;
   padding: 5px 10px;
   -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);

@@ -34,19 +34,28 @@ if(!jQuery)throw new Error("Bootstrap requires jQuery");+function(a){"use strict
 }());
 
 // Place any jQuery/helper plugins in here.
-function scrollToAnchor(id) {
+function scrollToAnchor(id, offset) {
+
+
 
     // Calc header height
     var headerHeight = parseFloat($('header .navbar').css('height'));
 
     // Force blug bg to be at top after scroll
-    // if (id === '#hire-me') {
-    //     headerHeight = headerHeight - 30;
-    // }
+    if (id === '#Hire-Me' && offset !== 'undefined') {
+        offset = 40;
+    }
+
+    console.log(offset);
+
+    // Offset default
+    offset = (typeof offset === 'undefined') ? headerHeight : offset;
+
+
 
     // ScrollTop
     $('html,body').stop().animate({
-        scrollTop: $(id).offset().top - headerHeight
+        scrollTop: $(id).offset().top - offset
     },
     {
         duration: 'slow',
@@ -70,13 +79,24 @@ function scrollToAnchor(id) {
 // Handler for .ready() called.
 $(document).ready(function() {
 
+    var offset = undefined;
+
     // Scrollspy
     $('body').scrollspy({
         target: 'header nav.navbar .container',
-        offset: 75
+        offset: 570
     });
 
+    var width = $(window).width();
 
+    // Tooltips only load if the site starts desktop
+    if (width > 753) {
+        $('.tooltip-hook').tooltip();
+    } else {
+        offset = 75;
+    }
+
+    console.log(offset);
 
     // Quick Scroll
     $('header .navbar a, .jump-link a').on('click', function(e) {
@@ -88,21 +108,15 @@ $(document).ready(function() {
         var hash = $(this).attr('href');
 
         // Call the scroll method
-        scrollToAnchor(hash);
+        scrollToAnchor(hash, offset);
     });
 
-    var width = $(window).width();
-
-    // Tooltips only load if the site starts desktop
-    if (width > 753) {
-        $('.tooltip-hook').tooltip();
 
 
-    }
+
 
     $('.fire').hover(function() {
-        var test = $(this).next('.tooltip').addClass('fire-tooltip');
-        console.log(test);
+        $(this).next('.tooltip').addClass('fire-tooltip');
     });
 
 
