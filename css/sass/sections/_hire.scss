@@ -11,6 +11,8 @@ h2 {
             color: #fff;
             font-size:24px;
             letter-spacing: 1px;
+            text-shadow:none;
+            display: block;
         }
     }
 
@@ -45,7 +47,17 @@ form {
         -ms-box-sizing: border-box;
         -o-box-sizing: border-box;
         box-sizing: border-box;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
+    }
+    input[type=submit] {
+
+    }
+    .handdrawn-no-robots {
+        background: url(../img/layout/no-robots.png) 0 0 no-repeat;
+        display: inline-block;
+        width: 84px;
+        height: 49px;
+        margin-top: -13px;
     }
     .form-success {
         display: none;
@@ -64,7 +76,9 @@ form {
     }
 
 }
+
 aside {
+    margin-top:60px;
     h2 {
         margin-top: 10px;
     }
@@ -136,5 +150,26 @@ aside {
     }
     .social-resume::before {
         background-position: -252px 0;
+    }
+}
+@media (min-width: $screen-sm) {
+    .page-header h2 small {
+        display: inline;
+    }
+}
+@media (min-width: $screen-md) {
+    aside {
+        margin-top:0;
+    }
+}
+@media (max-width: $screen-md) {
+    form:after {
+        border-right: 0;
+        border-top: 1px solid #4699b5;
+        right: 0;
+        height: 2px;
+        width: 100%;
+        top: auto;
+        bottom: -25px;
     }
 }

@@ -36,8 +36,6 @@ if(!jQuery)throw new Error("Bootstrap requires jQuery");+function(a){"use strict
 // Place any jQuery/helper plugins in here.
 function scrollToAnchor(id, offset) {
 
-
-
     // Calc header height
     var headerHeight = parseFloat($('header .navbar').css('height'));
 
@@ -46,12 +44,8 @@ function scrollToAnchor(id, offset) {
         offset = 40;
     }
 
-    console.log(offset);
-
     // Offset default
     offset = (typeof offset === 'undefined') ? headerHeight : offset;
-
-
 
     // ScrollTop
     $('html,body').stop().animate({
@@ -63,19 +57,6 @@ function scrollToAnchor(id, offset) {
     });
 }
 
-
-// var divs = $('div[id^="content-"]').hide(),
-//     i = 0;
-
-// (function cycle() {
-//     divs.eq(i).fadeIn(400)
-//               .delay(5000)
-//               .fadeOut(400, cycle);
-
-//     i = ++i % divs.length; // increment i,
-//                            //   and reset to 0 when it equals divs.length
-// })();
-
 // Handler for .ready() called.
 $(document).ready(function() {
 
@@ -84,19 +65,33 @@ $(document).ready(function() {
     // Scrollspy
     $('body').scrollspy({
         target: 'header nav.navbar .container',
-        offset: 570
+        offset: 590
     });
 
+    // Starting width
     var width = $(window).width();
 
-    // Tooltips only load if the site starts desktop
-    if (width > 753) {
-        $('.tooltip-hook').tooltip();
-    } else {
+    // If starting mobile
+    if (width < 753) {
         offset = 75;
     }
 
-    console.log(offset);
+    // On resize of windows check offset for mobile vs desktop
+    $(window).resize(function() {
+        width = $(window).width();
+        offset = undefined;
+        if (width < 753) {
+            offset = 75;
+        }
+    });
+
+    // Tooltips
+    $('.tooltip-hook').tooltip();
+
+    // Fire tooltips
+    $('.fire').hover(function() {
+        $(this).next('.tooltip').addClass('fire-tooltip');
+    });
 
     // Quick Scroll
     $('header .navbar a, .jump-link a').on('click', function(e) {
@@ -110,17 +105,6 @@ $(document).ready(function() {
         // Call the scroll method
         scrollToAnchor(hash, offset);
     });
-
-
-
-
-
-    $('.fire').hover(function() {
-        $(this).next('.tooltip').addClass('fire-tooltip');
-    });
-
-
-    // TODO: disable menu tooltip on responsive
 
 
     // Cycle

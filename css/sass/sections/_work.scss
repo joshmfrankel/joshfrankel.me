@@ -16,8 +16,8 @@
         width: 100%;
         left: 0;
         position: relative;
-        padding-left:30px;
-        padding-right: 100px;
+        padding:20px 30px;
+
 
         h4,
         p {
@@ -41,4 +41,7 @@
             }
         }
     }
+}
+@media (min-width: $screen-sm) {
+
 }

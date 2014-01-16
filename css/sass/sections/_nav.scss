@@ -1,12 +1,37 @@
 header nav {
     &.navbar {
-        -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-        -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-        -o-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-        box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+        -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+        -o-box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+        box-shadow: 0 1px 4px rgba(0,0,0,0.35);
     }
     .navbar-collapse {
         // float:right;
+    }
+    .navbar-header .navbar-toggle {
+        background-color: transparent;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        outline: none;
+        @include transition(all .3s);
+
+        // &:focus,
+        // &:active {
+        //     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+        //     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+        // }
+        // &.collapsed {
+        //     background-color: transparent;
+        //     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        //     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        // }
+        &.collapsed {
+            background-color:transparent;
+        }
+        &:active,
+        &:hover {
+            background-color: #303030;
+        }
     }
 
     .navbar-brand {
@@ -25,7 +50,14 @@ header nav {
         }
     }
 }
-
+.navbar-default .navbar-nav > li > a {
+    text-shadow: 1px 1px #343434;
+}
+@media (max-width: $screen-sm) {
+    .navbar-nav {
+        padding-top:25px;
+    }
+}
 @media (min-width: $screen-sm) and (max-width: $screen-md) {
     header nav .navbar-collapse .glyphicon {
         display: none;

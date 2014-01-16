@@ -29,7 +29,7 @@
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navigation">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navigation">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -76,9 +76,9 @@
                         </div>
                         <div class="hero-img"><img src="img/layout/josh-frankel-picture.png" alt="Me" /></div>
                     </div>
-                    <p class="tagline">I am fueled by the challenge of conquering the latest advances in programming <br /> and technology. My goal is to create code that is clean, functional, and always up<br />to web standards.  </p>
-                    <p class="jump-link"><a href="#What-I-Do" class="btn btn-primary btn-lg">Learn more about me</a></p>
-                    <p class="jump-link hire"><a href="#Hire-Me" class="btn btn-primary btn-lg">Hire Me!</a></p>
+                    <p class="tagline">I am fueled by the challenge of conquering the latest advances in programming <br /> and technology. My goal is to create code that is clean, functional, and always up to web standards.  </p>
+                    <p class="jump-link"><a href="#What-I-Do" class="btn btn-primary btn-lg" onClick="_gaq.push(['_trackEvent', 'Call to Action', 'What I Do']);">Learn more about me</a></p>
+                    <p class="jump-link hire"><a href="#Hire-Me" class="btn btn-primary btn-lg" onClick="_gaq.push(['_trackEvent', 'Call to Action', 'Hire Me']);">Hire Me!</a></p>
                 </div>
             </div>
 
@@ -138,35 +138,25 @@
                     <div class="item active">
                         <img src="img/portfolio/iloveruns/iloveruns-1.jpg" alt="Placeholder" />
                         <div class="carousel-caption">
-                            <h4>iLoveRuns Website<br /><small><a href="http://www.iloveruns.com">www.iloveruns.com</a></small></h4>
-                            <p>A website dedicted to promoting running events in the chicagoland area. A custom feature for this website was on the detail
-                            pages for events contained a header image with a tabular layout to display content. The tabs were created
-                            to allow them to properly respond on mobile devices.</p>
-                            <p><strong>Technology Used: </strong>PHP, Wordpress, HTML, SASS, CSS3, PHP, Responsive</p>
+                            <h4>iLoveRuns Website<br /><small><a href="http://www.iloveruns.com" target="_blank" rel="nofollow">www.iloveruns.com</a></small></h4>
+                            <p>A website dedicated to promoting running events in the chicagoland area. A custom feature for this website was on the detail pages for events contained a header image with a tabular layout to display content. The tabs were created to allow them to properly respond on mobile devices.</p>
+                            <p><strong>Technology Used: </strong>PHP, Wordpress, SASS, CSS3, PHP, Responsive</p>
                         </div>
                     </div>
                     <div class="item">
                         <img src="img/portfolio/rcrusoe/rcrusoe-1.jpg" alt="Placeholder" />
                         <div class="carousel-caption">
-                        <h4>RCrusoe Website<br /><small><a href="http://www.rcrusoe.com">www.rcrusoe.com</a></small></h4>
-                        <p>Some Text goes here </p>
-                        <p><strong>Technology Used: </strong>PHP, Wordpress, HTML, CSS3, Twitter 1.1 integration, Third-party Mapbox integration</p>
+                            <h4>R. Crusoe &amp; Son Website<br /><small><a href="http://www.rcrusoe.com" target="_blank" rel="nofollow">www.rcrusoe.com</a></small></h4>
+                            <p>This website focuses on creating unique journey's for their clients. For this project I facilitated communication and implementation of Mapbox with a freelance developer. I built a jquery plugin for this project to help developers use Twitter's new 1.1 api more efficiently.</p>
+                            <p><strong>Technology Used: </strong>PHP, Wordpress, CSS3, Twitter 1.1 integration, Mapbox integration</p>
                         </div>
                     </div>
                     <div class="item">
                         <img src="img/portfolio/iLoveRuns-large.png" alt="Placeholder" />
                         <div class="carousel-caption">
-                        <h4>Build Chicago<br /><small><a href="http://www.buildchicago.org/">www.buildchicago.org</a></small></h4>
-                        <p>This website is a non-profit organization with the goal of improving youth services for Chicago.</p>
-                        <p><strong>Technology Used: </strong>PHP, Wordpress, HTML, CSS3</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <img src="img/portfolio/iLoveRuns-large.png" alt="Placeholder" />
-                        <div class="carousel-caption">
-                        <h4>NAB<br /><small><a href="http://www.nabweb.org/">www.nabweb.org</a></small></h4>
-                        <p><strong>Technology Used: </strong>PHP, Third-Party database cURL integration, Wordpress, HTML, CSS3</p>
+                            <h4>NAB<br /><small><a href="http://www.nabweb.org/" target="_blank" rel="nofollow">www.nabweb.org</a></small></h4>
+                            <p>For this site I built a PHP class to handle integration a Third-Party service that contained all of the client's customer data. This class used cURL to send XML requests to the api's url. I have used this class on multiple websites further improving it each time I use it.</p>
+                            <p><strong>Technology Used: </strong>PHP, Third-Party cURL integration, Wordpress, HTML, CSS3</p>
                         </div>
                     </div>
 
@@ -180,7 +170,9 @@
                     <div class="item">
                         <img src="img/portfolio/iLoveRuns-large.png" alt="Placeholder" />
                         <div class="carousel-caption">
-                        <h4>Jody Michael Associates</h4>
+                        <h4>Jody Michael Associates<br /><small><a href="http://www.jodymichael.com" target="_blank" rel="nofollow">www.jodymichael.com</a></small></h4>
+                        <p>This is provides carreer, life, and organizational coaching strategies to working professionals. There is a client testimonial on every page, blog and twitter feeds displayed on the home page, and a responsive codebase.</p>
+                        <p><strong>Technology Used: </strong>PHP, Wordpress, CSS3, SASS, Twitter 1.1 Integration</p>
                         </div>
                     </div>
                 </div>
@@ -242,9 +234,9 @@
 
                 <div class="grid-right">
 
-                    <p>I love learning new development skills, as you can find me constantly pouring over articles and tutorials. When I'm not reading up on web development I usually am writing about it in my programming blog. I take pride in making sure everything I develop is always up to <mark>web standards</mark>.</p>
+                    <p>I love learning new development skills, as you can find me constantly pouring over articles and tutorials. When I'm not reading up on web development I usually am writing about it in my programming blog. I take pride in making sure everything I develop is always up to <mark class="tooltip-hook" data-toggle="tooltip" data-placement="top" title="PSR, W3C, and Code validation all help me produce code consistently up to standard.">web standards</mark>.</p>
 
-                    <p>My education was completed at <mark>Purdue University</mark> where I received a Bachelor of Science in Computer Graphics Technology. This degree contained a dual focus on both Graphic Design and Computer Science  theory.</p>
+                    <p>My education was completed at <mark class="tooltip-hook" data-toggle="tooltip" data-placement="top" title="My Alma Mater. Located in West Lafayette, IN, Purdue University was where I was formally educated.">Purdue University</mark> where I received a <mark class="tooltip-hook" data-toggle="tooltip" data-placement="top" title="Computer Graphics Technology is a blending of Graphic Design and Computer Science disciplines.">Bachelor of Science in Computer Graphics Technology</mark>. This degree contained a dual focus on both Graphic Design and Computer Science  theory.</p>
 
                     <!-- <h5><span class="glyphicon glyphicon-chevron-left"></span>Check out my skills</h5> -->
 
@@ -264,25 +256,25 @@
                 <div class="row">
                     <article class="col-md-4">
                     <p><span class="glyphicon glyphicon-time"></span><time datetime="2013-12-31">Dec 31, 2013</time></p>
-                        <h1><a href="#">Article Title 1</a></h1>
+                        <h1><a href="#" target="_blank">Article Title 1</a></h1>
                         <p>The short description will go here. No more than 200
                         characters are allowed in this section. This will draw
-                        interest to the blog... <a href="#">read more &rsaquo;</a></p>
+                        interest to the blog... <a href="#" target="_blank">read more &rsaquo;</a></p>
                     </article>
                     <article class="col-md-4">
                         <p><span class="glyphicon glyphicon-time"></span><time datetime="2014-01-03">Jan 3, 2014</time></p>
-                        <h1><a href="#">Article Title 2</a></h1>
+                        <h1><a href="#" target="_blank">Article Title 2</a></h1>
                         <p>The short description will go here. No more than 200
                         characters are allowed in this section. This will draw
-                        interest to the blog... <a href="#">read more &rsaquo;</a></p>
+                        interest to the blog... <a href="#" target="_blank">read more &rsaquo;</a></p>
 
                     </article>
                     <article class="col-md-4">
                         <p><span class="glyphicon glyphicon-time"></span><time datetime="2014-01-05">Jan 5, 2014</time></p>
-                        <h1><a href="#">Article title 3</a></h1>
+                        <h1><a href="#" target="_blank">Article title 3</a></h1>
                         <p>The short description will go here. No more than 200
                         characters are allowed in this section. This will draw
-                        interest to the blog... <a href="#">read more &rsaquo;</a></p>
+                        interest to the blog... <a href="#" target="_blank">read more &rsaquo;</a></p>
                     </article>
                 </div>
             </div>
@@ -360,7 +352,7 @@
                     <ul>
                         <li>Rails 3.2</li>
                         <li>Learned the following: Rails basics, TDD, MVC, REST, Routes, ActiveRecord, Database migration</li>
-                        <li>Link: <a href="http://www.cdm.depaul.edu/ipd/Programs/Pages/RubyonRails.aspx">Certification Details</a></li>
+                        <li>Link: <a href="http://www.cdm.depaul.edu/ipd/Programs/Pages/RubyonRails.aspx" target="_blank">Certification Details</a></li>
                     </ul>
                 </div>
             </div>
@@ -372,7 +364,7 @@
                     <p><strong>Drupal Camp Chicago</strong> (2012)</p>
                     <ul>
                         <li>Sessions attended: Drupal 101, Drupal 102, Demystifying Views, 45 modules in 45 minutes, I want to write a Drupal module</li>
-                        <li>Link: <a href="https://2012.drupalcampchicago.org">Conference Details</a></li>
+                        <li>Link: <a href="https://2012.drupalcampchicago.org" target="_blank">Conference Details</a></li>
                     </ul>
                 </div>
             </div>
@@ -384,7 +376,7 @@
                     <p><strong>How Design Live Conference</strong> (2011)</p>
                     <ul>
                         <li>Freelance sessions: Client Management, Staying Motivated, Design Skills from experts, Expert Workflow, Billing and Taxes, General Questions</li>
-                        <li>Link: <a href="http://www.howdesign.com/">Conference Details</a></li>
+                        <li>Link: <a href="http://www.howdesign.com/" target="_blank">Conference Details</a></li>
                     </ul>
                 </div>
             </div>
@@ -399,7 +391,7 @@
                 </div>
 
                 <div class="row">
-                    <form class="hire-me-form col-md-6" novalidate="novalidate">
+                    <form class="hire-me-form col-md-6" novalidate="novalidate" onsubmit="_gaq.push(['_trackEvent', 'Hire Me Form', 'Submit', 'User submitted the form']);">
                         <div class="form-error">
                         </div>
                         <div class="form-success">
@@ -421,16 +413,17 @@
                         <input type="hidden" name="phone" id="phone">
                         <input type="submit" class="submit-btn" value="Send to Josh">
                     </form>
+
                     <aside class="col-md-5 col-md-offset-1 col-lg-offset-1 col-lg-5">
                         <h2>Reasons to Hire Me</h2>
                         <ul>
-                            <li class="social-icon social-github"><a href="https://github.com/joshmfrankel">I have no (git) commit hangups</a></li>
-                            <li class="social-icon social-wordpress"><a href="http://blog.joshmfrankel.com/">I share what I learn</a></li>
-                            <li class="social-icon social-stackoverflow"><a href="http://stackoverflow.com/users/906974/josh-frankel">I give back to the community</a></li>
-                            <li class="social-icon social-linkedin"><a href="http://www.linkedin.com/in/joshmfrankel">I take professionalism seriously</a></li>
-                            <li class="social-icon social-twitter"><a href="https://twitter.com/Joshmfrankel">I like to be social</a></li>
+                            <li class="social-icon social-github"><a href="https://github.com/joshmfrankel" target="_blank">I have no (git) commit hangups</a></li>
+                            <li class="social-icon social-wordpress"><a href="http://blog.joshmfrankel.com/" target="_blank">I share what I learn</a></li>
+                            <li class="social-icon social-stackoverflow"><a href="http://stackoverflow.com/users/906974/josh-frankel" target="_blank">I give back to the community</a></li>
+                            <li class="social-icon social-linkedin"><a href="http://www.linkedin.com/in/joshmfrankel" target="_blank">I take professionalism seriously</a></li>
+                            <li class="social-icon social-twitter"><a href="https://twitter.com/Joshmfrankel" target="_blank">I like to be social</a></li>
                             <li class="social-icon social-email"><a href="mailto:josh@joshfrankel.me">I am easy to get a hold of</a></li>
-                            <li class="social-icon social-resume"><a href="/docs/code-sample.pdf">I have proof to back up my claims</a></li>
+                            <li class="social-icon social-resume"><a href="/docs/code-sample.pdf" target="_blank">I have proof to back up my claims</a></li>
                         </ul>
                     </aside>
                 </div>
@@ -440,7 +433,13 @@
 
         <!-- Copyright, Tech stuff, acknowledgements -->
         <footer>
-            <small>Copyright © 2013, Joshua Moore Frankel | Made with love using: <a href="http://getbootstrap.com/">Bootstrap 3</a>, <a href="http://sass-lang.com/">SASS</a>, <a href="http://www.doublejdesign.co.uk">Mono Social Icons</a></small>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">© 2014 Design & Development by <strong>Joshua Moore Frankel</strong></div>
+                    <div class="col-md-5">Made with love using: &nbsp;<a href="http://getbootstrap.com/" target="_blank" rel="nofollow">Bootstrap 3</a>, <a href="http://sass-lang.com/" target="_blank" rel="nofollow">SASS</a>, <a href="http://www.doublejdesign.co.uk" target="_blank" rel="nofollow">Mono Social Icons</a>, <a href="https://github.com/guard/guard" target="_blank" rel="nofollow">Guard</a>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <!-- Google Authorship -->

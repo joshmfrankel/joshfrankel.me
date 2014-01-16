@@ -4119,24 +4119,24 @@ input[type="button"].btn-block {
   border-color: #343434;
 }
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #999999;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: gray;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #777777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #999999;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #7cb8cc;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #555555;
+  color: #7cb8cc;
   background-color: #343434;
 }
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -4144,10 +4144,10 @@ input[type="button"].btn-block {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #dddddd;
+  border-color: #333333;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #dddddd;
+  background-color: #303030;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #cccccc;
@@ -4163,26 +4163,26 @@ input[type="button"].btn-block {
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: #343434;
-  color: #555555;
+  color: #7cb8cc;
 }
 .navbar-default .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #7cb8cc;
+  border-bottom-color: #7cb8cc;
 }
 .navbar-default .navbar-nav > .dropdown > a .caret {
-  border-top-color: #777777;
-  border-bottom-color: #777777;
+  border-top-color: #999999;
+  border-bottom-color: #999999;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777777;
+    color: #999999;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #7cb8cc;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555555;
+    color: #7cb8cc;
     background-color: #343434;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -4191,7 +4191,7 @@ input[type="button"].btn-block {
   }
 }
 .navbar-default .navbar-link {
-  color: #777777;
+  color: #999999;
 }
 .navbar-default .navbar-link:hover {
   color: #7cb8cc;
@@ -6422,15 +6422,34 @@ header .container {
   background-color: transparent;
 }
 
+.tooltip-inner {
+  text-shadow: none;
+  font-weight: 700;
+}
+
 /**
  * Nav
  * nav.scss
  */
 header nav.navbar {
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+header nav .navbar-header .navbar-toggle {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header nav .navbar-header .navbar-toggle.collapsed {
+  background-color: transparent;
+}
+header nav .navbar-header .navbar-toggle:active, header nav .navbar-header .navbar-toggle:hover {
+  background-color: #303030;
 }
 header nav .navbar-brand {
   position: absolute;
@@ -6451,6 +6470,15 @@ header nav .navbar-brand img:hover {
   transform: rotate(7deg);
 }
 
+.navbar-default .navbar-nav > li > a {
+  text-shadow: 1px 1px #343434;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    padding-top: 25px;
+  }
+}
 @media (min-width: 768px) and (max-width: 992px) {
   header nav .navbar-collapse .glyphicon {
     display: none;
@@ -6485,7 +6513,7 @@ header nav .navbar-brand img:hover {
   color: #96c6d6;
 }
 #home .tagline {
-  font-style: italic;
+  color: #999;
 }
 #home .jump-link {
   display: inline-block;
@@ -6540,6 +6568,12 @@ header nav .navbar-brand img:hover {
   #home .hero-img img {
     width: inherit;
   }
+  #home .tagline {
+    margin-bottom: 30px;
+  }
+  #home .page-header {
+    margin-bottom: 5px;
+  }
 }
 @media (min-width: 992px) {
   #home .page-header {
@@ -6551,10 +6585,19 @@ header nav .navbar-brand img:hover {
     position: relative;
     top: 59px;
   }
+  #home .tagline {
+    width: 600px;
+  }
 }
 @media (min-width: 1200px) {
   #home .page-header {
-    padding-right: 150px;
+    padding-right: 175px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #home .jumbotron {
+    padding-top: 70px;
+    margin-bottom: 47px;
   }
 }
 
@@ -6563,10 +6606,11 @@ header nav .navbar-brand img:hover {
  * testimonial.scss
  */
 #testimonial {
-  min-height: 350px;
+  min-height: 330px;
 }
 #testimonial h2 {
-  font-size: 40px;
+  font-size: 35px;
+  font-size: 3.5rem;
   letter-spacing: 1px;
   margin-top: 25px;
 }
@@ -6593,6 +6637,11 @@ header nav .navbar-brand img:hover {
 }
 #testimonial .testimonial-container {
   margin-top: 25px;
+}
+@media (max-width: 992px) {
+  #testimonial .testimonial-single blockquote p {
+    font-size: 14px;
+  }
 }
 
 /**
@@ -6863,8 +6912,7 @@ header nav .navbar-brand img:hover {
   width: 100%;
   left: 0;
   position: relative;
-  padding-left: 30px;
-  padding-right: 100px;
+  padding: 20px 30px;
 }
 #My-Work .carousel .carousel-caption h4,
 #My-Work .carousel .carousel-caption p {
@@ -6920,6 +6968,7 @@ header nav .navbar-brand img:hover {
   width: 100%;
   height: 222px;
   padding: 5px 10px;
+  border-radius: 4px;
   -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 700ms ease;
@@ -6949,7 +6998,7 @@ header nav .navbar-brand img:hover {
   color: #fff;
   font-weight: 700;
 }
-#My-Experience .experience-block:hover .experience-caption, #My-Experience .experience-block:active .experience-caption {
+#My-Experience .experience-block:hover .experience-caption, #My-Experience .experience-block:active .experience-caption, #My-Experience .experience-block:focus .experience-caption {
   opacity: 1;
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -6988,7 +7037,9 @@ header nav .navbar-brand img:hover {
  */
 #Hire-Me {
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
 #Hire-Me .page-header h2 {
   font-size: 100px;
@@ -6998,6 +7049,8 @@ header nav .navbar-brand img:hover {
   color: #fff;
   font-size: 24px;
   letter-spacing: 1px;
+  text-shadow: none;
+  display: block;
 }
 #Hire-Me .page-header:after {
   display: none;
@@ -7027,7 +7080,14 @@ header nav .navbar-brand img:hover {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+#Hire-Me form .handdrawn-no-robots {
+  background: url(../img/layout/no-robots.png) 0 0 no-repeat;
+  display: inline-block;
+  width: 84px;
+  height: 49px;
+  margin-top: -13px;
 }
 #Hire-Me form .form-success {
   display: none;
@@ -7042,6 +7102,9 @@ header nav .navbar-brand img:hover {
   right: -12px;
   top: 0;
   border-right: 1px solid #4699b5;
+}
+#Hire-Me aside {
+  margin-top: 60px;
 }
 #Hire-Me aside h2 {
   margin-top: 10px;
@@ -7113,12 +7176,41 @@ header nav .navbar-brand img:hover {
 #Hire-Me aside .social-resume::before {
   background-position: -252px 0;
 }
+@media (min-width: 768px) {
+  #Hire-Me .page-header h2 small {
+    display: inline;
+  }
+}
+@media (min-width: 992px) {
+  #Hire-Me aside {
+    margin-top: 0;
+  }
+}
+@media (max-width: 992px) {
+  #Hire-Me form:after {
+    border-right: 0;
+    border-top: 1px solid #4699b5;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    top: auto;
+    bottom: -25px;
+  }
+}
+@media (min-width: 992px) {
+  #Hire-Me {
+    padding-bottom: 165px;
+  }
+}
 
 /**
  * Foooter
  */
 footer {
-  padding: 30px 0;
+  background: #343434;
+  color: #999;
+  font-size: 13px;
+  padding: 10px 0;
 }
 
 .left-and-right {

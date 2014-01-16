@@ -25,8 +25,6 @@
 // Place any jQuery/helper plugins in here.
 function scrollToAnchor(id, offset) {
 
-
-
     // Calc header height
     var headerHeight = parseFloat($('header .navbar').css('height'));
 
@@ -35,12 +33,8 @@ function scrollToAnchor(id, offset) {
         offset = 40;
     }
 
-    console.log(offset);
-
     // Offset default
     offset = (typeof offset === 'undefined') ? headerHeight : offset;
-
-
 
     // ScrollTop
     $('html,body').stop().animate({
@@ -51,16 +45,3 @@ function scrollToAnchor(id, offset) {
         easing: 'swing'
     });
 }
-
-
-// var divs = $('div[id^="content-"]').hide(),
-//     i = 0;
-
-// (function cycle() {
-//     divs.eq(i).fadeIn(400)
-//               .delay(5000)
-//               .fadeOut(400, cycle);
-
-//     i = ++i % divs.length; // increment i,
-//                            //   and reset to 0 when it equals divs.length
-// })();

@@ -20,7 +20,8 @@ h1 {
 }
 
 .tagline {
-    font-style: italic;
+    color: #999;
+
 }
 .jump-link {
     display: inline-block;
@@ -83,6 +84,12 @@ h1 {
             width:inherit;
         }
     }
+    .tagline {
+        margin-bottom: 30px;
+    }
+    .page-header {
+        margin-bottom: 5px;
+    }
 }
 @media (min-width: $screen-md) {
     .page-header {
@@ -94,9 +101,18 @@ h1 {
         position: relative;
         top:59px;
     }
+    .tagline {
+        width:600px;
+    }
 }
 @media (min-width: $screen-lg) {
     .page-header {
-        padding-right: 150px;
+        padding-right: 175px;
+    }
+}
+@media screen and (min-width: $screen-tablet) {
+    .jumbotron {
+        padding-top: 70px;
+        margin-bottom: 47px;
     }
 }

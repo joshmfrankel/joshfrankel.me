@@ -6,19 +6,33 @@ $(document).ready(function() {
     // Scrollspy
     $('body').scrollspy({
         target: 'header nav.navbar .container',
-        offset: 570
+        offset: 590
     });
 
+    // Starting width
     var width = $(window).width();
 
-    // Tooltips only load if the site starts desktop
-    if (width > 753) {
-        $('.tooltip-hook').tooltip();
-    } else {
+    // If starting mobile
+    if (width < 753) {
         offset = 75;
     }
 
-    console.log(offset);
+    // On resize of windows check offset for mobile vs desktop
+    $(window).resize(function() {
+        width = $(window).width();
+        offset = undefined;
+        if (width < 753) {
+            offset = 75;
+        }
+    });
+
+    // Tooltips
+    $('.tooltip-hook').tooltip();
+
+    // Fire tooltips
+    $('.fire').hover(function() {
+        $(this).next('.tooltip').addClass('fire-tooltip');
+    });
 
     // Quick Scroll
     $('header .navbar a, .jump-link a').on('click', function(e) {
@@ -32,17 +46,6 @@ $(document).ready(function() {
         // Call the scroll method
         scrollToAnchor(hash, offset);
     });
-
-
-
-
-
-    $('.fire').hover(function() {
-        $(this).next('.tooltip').addClass('fire-tooltip');
-    });
-
-
-    // TODO: disable menu tooltip on responsive
 
 
     // Cycle

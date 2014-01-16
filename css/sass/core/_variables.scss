@@ -56,6 +56,11 @@ $font-family-base: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $icon-font-path: "../css/sass/vendor/bootstrap/fonts/";
 $tooltip-bg: $brand-primary;
 $navbar-default-bg: #454545;
+$navbar-default-link-color: #999;
+// $navbar-default-link-hover-color: #7cb8cc;
+$navbar-default-link-active-color: #7cb8cc;
+$navbar-default-toggle-border-color: #333;
+$navbar-default-toggle-hover-bg: darken($navbar-default-toggle-border-color, 1%);
 
 // NAVBAR
 $navbar-default-link-hover-color: $brand-primary;

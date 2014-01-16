@@ -1,6 +1,7 @@
 h2 {
     @extend %inverse-header;
-    font-size: 40px;
+    font-size: 35px;
+    font-size:3.5rem;
     letter-spacing: 1px;
     margin-top: 25px;
 }
@@ -37,11 +38,8 @@ h2 {
 
 
 
-@media (min-width: $screen-sm) {
-    .testimonial-single {
-
-        &.testimonial-1 {
-
-        }
+@media (max-width: $screen-md) {
+    .testimonial-single blockquote p {
+        font-size: 14px;
     }
 }
