@@ -47,6 +47,30 @@ $(document).ready(function() {
         scrollToAnchor(hash, offset);
     });
 
+    // Blog Posts section
+    $.ajax({
+        url: "php/getPosts.php"
+    }).done(function ( data ) {
+        //console.log(data);
+        $('.my-blog .row').html(data);
+    });
+
+    // Validation of form
+    $('.hire-me-form').validate({
+        rules: {
+            field: {
+                email: {
+                    required: true,
+                    email: true
+                },
+                math: {
+                    required: true,
+                    digits: true,
+                    range: [4, 6]
+                }
+            }
+        }
+    });
 
     // Cycle
     // todo turn into plugin

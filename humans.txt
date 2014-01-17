@@ -1,0 +1,27 @@
+/* TEAM */
+
+    Web Designer & Developer: Josh Frankel
+    Contact: Josh [at] joshfrankel.me
+    Twitter: joshmfrankel
+    Location: Chicago, IL
+
+/* THANKS */
+
+    Design Consultant: Danielle Bloss
+    Location: San Francisco, CA
+
+    Content Editor: Megan Oed
+    Location: Chicago, IL
+
+    Mono Social Icons: http://www.doublejdesign.co.uk
+    URL: http://icondock.com/free/mono-social-icons
+
+    Mini Vector App Icons: MediaLoot
+    URL: http://medialoot.com/item/free-mini-vector-app-icons/
+
+/* SITE */
+
+    Last update:2013/05/15
+    Language: English
+    Doctype: HTML5
+    Tools: Sublime Text, Photoshop, Flexslider, jQuery Cycle, Monoicons, Webicons, PHPMailer
