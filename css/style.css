@@ -7089,7 +7089,8 @@ header nav .navbar-brand img:hover {
   height: 49px;
   margin-top: -13px;
 }
-#Hire-Me form .form-success {
+#Hire-Me form .form-success,
+#Hire-Me form .form-error {
   display: none;
 }
 #Hire-Me form:after {

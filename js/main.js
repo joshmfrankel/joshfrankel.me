@@ -69,6 +69,27 @@ $(document).ready(function() {
                     range: [4, 6]
                 }
             }
+        },
+
+        // Success!
+        submitHandler: function(form) {
+
+            // Fade in success message
+            $('.form-success').fadeIn();
+
+            // Submit Form
+        },
+        invalidHandler: function (e, validator) {
+            var msg  = '';
+
+            if (validator.errorList.length > 0) {
+                for (x=0;x<validator.errorList.length;x++) {
+                    //errors += "\n\u25CF " + validator.errorList[x].message;
+                    msg += '\n<strong>' + validator.errorList[x].element.name + '</strong>: ' + validator.errorList[x].message;
+
+                }
+            }
+            $('.form-error').fadeIn().find('.alert').html(msg);
         }
     });
 
