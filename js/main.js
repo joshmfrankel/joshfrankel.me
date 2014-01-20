@@ -85,7 +85,7 @@ $(document).ready(function() {
             if (validator.errorList.length > 0) {
                 for (x=0;x<validator.errorList.length;x++) {
                     //errors += "\n\u25CF " + validator.errorList[x].message;
-                    msg += '\n<strong>' + validator.errorList[x].element.name + '</strong>: ' + validator.errorList[x].message;
+                    msg += '<p><strong>' + validator.errorList[x].element.name + '</strong>: ' + validator.errorList[x].message + '</p>';
 
                 }
             }
