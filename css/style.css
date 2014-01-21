@@ -6842,10 +6842,10 @@ header nav .navbar-brand img:hover {
  * What I Write (my blog)
  */
 .my-blog h1 {
-  font-size: 25px;
-  font-size: 2.5rem;
-  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-size: 1.6rem;
   margin-top: 0;
+  font: 700 1.6rem/1.5 "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .my-blog time {
   margin-left: 5px;

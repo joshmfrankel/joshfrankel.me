@@ -391,12 +391,12 @@
                 </div>
 
                 <div class="row">
-                    <form class="hire-me-form col-md-6" onsubmit="_gaq.push(['_trackEvent', 'Hire Me Form', 'Submit', 'User submitted the form']);">
+                    <form class="hire-me-form col-md-6" onsubmit="_gaq.push(['_trackEvent', 'Hire Me Form', 'Submit', 'User submitted the form']);" action="php/doMail.php">
                         <div class="form-error">
                             <div class="alert alert-danger"></div>
                         </div>
                         <div class="form-success">
-                            <div class="alert alert-success"><strong>Success!</strong> Message has been sent to Josh.</div>
+                            <div class="alert alert-success"><span class="glyphicon glyphicon-ok-sign"></span>&nbsp;<strong>Success!</strong> Message has been sent to Josh.</div>
                         </div>
 
                         <label for="name">Name</label>
@@ -411,7 +411,7 @@
                         <label for="math">2+3=?<span class="handdrawn-no-robots"></span></label>
                         <input type="number" name="math" id="math" min="5" max="5" required>
 
-                        <input type="hidden" name="phone" id="phone">
+                        <input type="hidden" name="zipcode" id="zipcode">
                         <input type="submit" class="submit-btn" value="Send to Josh">
                     </form>
 
