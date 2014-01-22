@@ -210,9 +210,9 @@ $(document).ready(function() {
                     $('.form-error').fadeIn().find('.alert').html(parsedJSON['msg']);
                 } else {
                     $('.form-error').fadeOut();
-                    $('.form-success').html(parsedJSON['msg']).fadeIn();
+                    $('.form-success').html(parsedJSON['msg']).fadeIn().delay(1000).fadeOut();
                     // Remove form data
-                    $('.hire-me-form input[type=text], .hire-me-form textarea').val('');
+                    $('.hire-me-form input[type=text], .hire-me-form textarea, .hire-me-form input[type=email], .hire-me-form input[type=number]').val('');
                 }
 
             });

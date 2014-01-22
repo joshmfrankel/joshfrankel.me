@@ -48,6 +48,10 @@
 #testimonial {
     min-height: 330px;
     @import "sections/testimonial.scss";
+
+    @media (max-width: $screen-sm) {
+      padding-bottom: 30px;
+    }
 }
 
 /**

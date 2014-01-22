@@ -49,8 +49,16 @@ form {
         box-sizing: border-box;
         margin-bottom: 30px;
     }
-    input[type=submit] {
+    .submit-btn {
+        background-color: darken(#7cb8cc, 8%);
+        border-color: darken(#6aaec5, 8%);
+        outline: none;
+        width:100%;
 
+        &:hover {
+            background-color: darken(#7cb8cc, 12%);
+            border-color: darken(#6aaec5, 12%);
+        }
     }
     .handdrawn-no-robots {
         background: url(../img/layout/no-robots.png) 0 0 no-repeat;
