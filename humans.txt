@@ -18,7 +18,7 @@
 
 /* SITE */
 
-    Last update:2014/01/19
+    Last update:2014/02/04
     Language: English
     Doctype: HTML5
-    Tools: Bootstrap 3.0, Sass, Photoshop, jQuery, Guard, PHPMailer, Wordpress, Sublime Text 3.0 Beta, Git
+    Tools: Bootstrap 3.0, Sass, Photoshop, jQuery, Guard, PHPMailer, Wordpress, Sublime Text 3.0 Beta, Git, Google Analytics
