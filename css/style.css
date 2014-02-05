@@ -99,6 +99,19 @@
   margin-top: 15px;
 }
 
+.server-error {
+  text-align: center;
+}
+.server-error span {
+  font-size: 120px;
+}
+.server-error h1 {
+  font-size: 40px;
+}
+.server-error p a {
+  font-size: 20px;
+}
+
 /**
  * Bootstrap
  */

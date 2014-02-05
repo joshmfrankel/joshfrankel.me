@@ -58,3 +58,16 @@
 .reduced-margin-top {
     margin-top:15px;
 }
+.server-error {
+    text-align: center;
+
+    span {
+        font-size: 120px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p a {
+        font-size: 20px;
+    }
+}
