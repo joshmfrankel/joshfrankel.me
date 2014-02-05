@@ -1,0 +1,114 @@
+
+@import "compass";
+
+/**
+ * Placeholders
+ */
+@import "core/placeholder.scss";
+
+/**
+ * Variables
+ */
+@import "core/variables.scss";
+
+/**
+ * CLasses
+ */
+@import "core/classes.scss";
+
+/**
+ * Bootstrap
+ */
+@import "vendor/bootstrap/lib/bootstrap.scss";
+
+/**
+ * Base Styles
+ * base.scss
+ */
+@import "sections/base.scss";
+
+/**
+ * Nav
+ * nav.scss
+ */
+@import "sections/nav.scss";
+
+/**
+ * Home
+ * Home.scss
+ */
+#home {
+  @import "sections/home.scss";
+}
+
+/**
+ * Testimonial
+ * testimonial.scss
+ */
+#testimonial {
+    min-height: 330px;
+    @import "sections/testimonial.scss";
+
+    @media (max-width: $screen-sm) {
+      padding-bottom: 30px;
+    }
+}
+
+/**
+ * What I Do
+ */
+#What-I-Do {
+    @import "sections/what-i-do.scss";
+}
+
+/**
+ * What I Write (my blog)
+ */
+.my-blog {
+  @import "sections/what-i-write.scss";
+}
+
+/**
+ * My Work
+ */
+#My-Work {
+    @import "sections/work.scss";
+}
+
+/**
+ * Experience
+ */
+#My-Experience {
+    @import "sections/experience.scss";
+
+}
+
+/**
+ * Hire Me
+ */
+#Hire-Me {
+    @import "sections/hire.scss";
+    padding-top:50px;
+    padding-bottom: 40px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    @media (min-width: $screen-md) {
+      padding-bottom: 165px;
+    }
+
+}
+
+/**
+ * Foooter
+ */
+@import "sections/footer.scss";
+
+.left-and-right {
+  @include make-row();
+  .left {
+    @include make-md-column(6);
+  }
+  .right {
+    @include make-md-column(6);
+  }
+}

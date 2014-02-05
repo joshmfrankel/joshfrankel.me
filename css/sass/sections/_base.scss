@@ -1,0 +1,99 @@
+body {
+    background: url(../img/bg-texture.jpg) 0 0 repeat;
+    padding-top:50px;
+}
+
+h1 {
+    font-family: $franchise;
+    text-transform: uppercase;
+}
+h2 {
+    color:#454545;
+    font-family: $franchise;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: $franchise;
+    font-size: 30px;
+    font-size:3rem;
+    text-transform: uppercase;
+    color:#555;
+}
+h6 {
+    font-family: $daniel;
+    font-size: 16px;
+    font-size:1.6rem;
+    margin:0 0 15px 25px;
+    letter-spacing: 1.5px;
+}
+ul {
+    list-style: none;
+}
+mark {
+    background: none;
+    color:darken($brand-primary, 5%);
+    text-shadow: 0px 1px 0px #ffffff;
+
+    &:hover {
+        cursor: pointer;
+        border-bottom: 1px dashed $brand-primary;
+    }
+}
+a {
+    color:$brand-primary;
+    text-decoration: none;
+    @include transition(all .5s);
+
+    &:hover {
+        color:ligthen($brand-primary, 7%);
+    }
+}
+p,
+li {
+    color: $gray;
+}
+p {
+    font-size: 14px;
+    font: 400 1.4rem/2.2 $font-family-base;
+    text-shadow: 0px 1px #efefef;
+    margin-bottom: 15px;
+}
+hr {
+    border-top: 1px solid rgba(115, 114, 115, 0.3);
+    border-bottom: 1px solid #fff;
+}
+
+// Bootstrap Overrides
+.page-header {
+    border:none;
+    margin-bottom: 20px;
+
+    h2 {
+        font-size: 40px;
+        font-size: 4rem;
+        text-shadow: 0 1px #fff;
+    }
+
+    position: relative;
+    &:after {
+        border-top: 1px solid rgba(115,114,115,0.3);
+        border-bottom: 1px solid #fff;
+        content:'';
+        width:100%;
+        display: inline-block;
+        position: absolute;
+    }
+}
+.container {
+    padding:0 20px;
+}
+header .container {
+    padding:0 15px;
+}
+.jumbotron {
+    background-color:transparent;
+}
+.tooltip-inner {
+    text-shadow:none;
+    font-weight: 700;
+}

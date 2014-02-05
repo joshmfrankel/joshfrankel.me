@@ -1,0 +1,13 @@
+@mixin noLeftMargin {
+    margin-left: 0;
+}
+@mixin noRightMargin {
+    margin-right: 0;
+}
+@mixin vendorize($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}

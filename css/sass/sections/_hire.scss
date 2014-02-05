@@ -1,0 +1,184 @@
+h2 {
+    @extend %inverse-header;
+}
+.page-header {
+
+    h2 {
+        font-size: 100px;
+        font-size: 10rem;
+
+        small {
+            color: #fff;
+            font-size:24px;
+            letter-spacing: 1px;
+            text-shadow:none;
+            display: block;
+        }
+    }
+
+    &:after {
+        display: none;
+    }
+}
+form {
+
+    label {
+        color:#fff;
+        font-size: 30px;
+        font: 400 3.0rem/1 $franchise;
+        display:block;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=number],
+    textarea {
+        border: 0;
+        color: #919191;
+        font-size: 14px;
+        font-size: 1.4rem;
+        width: 100%;
+        -webkit-box-shadow: inset 1px 1.5px 5px 0 rgba(0,0,0,0.3);
+        box-shadow: inset 1px 1.5px 5px 0 rgba(0,0,0,0.3);
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    .submit-btn {
+        background-color: darken(#7cb8cc, 8%);
+        border-color: darken(#6aaec5, 8%);
+        outline: none;
+        width:100%;
+
+        &:hover {
+            background-color: darken(#7cb8cc, 12%);
+            border-color: darken(#6aaec5, 12%);
+        }
+    }
+    .handdrawn-no-robots {
+        background: url(../img/layout/no-robots.png) 0 0 no-repeat;
+        display: inline-block;
+        width: 84px;
+        height: 49px;
+        margin-top: -13px;
+    }
+    .form-success,
+    .form-error {
+        display: none;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        background: #a1ccda;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        right: -12px;
+        top: 0;
+        border-right: 1px solid #4699b5;
+    }
+
+}
+
+aside {
+    margin-top:60px;
+    h2 {
+        margin-top: 10px;
+    }
+    ul {
+        padding-left:0;
+    }
+    .social-icon {
+        position: relative;
+        left: -36px;
+    }
+    .social-icon a {
+        color: #fff;
+        display: inline-block;
+        padding: 5px 5px 6px 50px;
+        position: relative;
+        text-shadow:none;
+        font-size: 16px;
+        font-size: 1.6rem;
+
+        &:hover {
+            border:none;
+        }
+    }
+    .social-icon:hover::before {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+
+    }
+    .social-icon::before {
+        content: '';
+        background: url(../img/sprites.png) 0 0 no-repeat;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        position: relative;
+        top:10px;
+        left: 36px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+    }
+    .social-github::before {
+        background-position: 0 0;
+    }
+    .social-wordpress::before {
+        background-position: -42px 0;
+    }
+    .social-stackoverflow::before {
+        background-position: -84px 0;
+    }
+    .social-linkedin::before {
+        background-position: -126px 0;
+    }
+    .social-twitter::before {
+        background-position: -168px 0;
+    }
+    .social-email::before {
+        background-position: -210px 0;
+    }
+    .social-resume::before {
+        background-position: -252px 0;
+    }
+}
+@media (min-width: $screen-sm) {
+    .page-header h2 small {
+        display: inline;
+    }
+}
+@media (min-width: $screen-md) {
+    aside {
+        margin-top:0;
+    }
+}
+@media (max-width: $screen-md) {
+    form:after {
+        border-right: 0;
+        border-top: 1px solid #4699b5;
+        right: 0;
+        height: 2px;
+        width: 100%;
+        top: auto;
+        bottom: -25px;
+    }
+}
