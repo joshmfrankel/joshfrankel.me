@@ -6937,6 +6937,12 @@ header nav .navbar-brand img:hover {
   position: relative;
   padding: 20px 30px;
 }
+#My-Work .carousel .carousel-caption p {
+  margin-bottom: 0;
+}
+#My-Work .carousel .carousel-caption .carousel-desc {
+  margin-bottom: 15px;
+}
 #My-Work .carousel .carousel-caption h4,
 #My-Work .carousel .carousel-caption p {
   text-align: left;
