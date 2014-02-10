@@ -92,7 +92,10 @@ $(document).ready(function() {
     $.ajax({
         url: "php/getIp.php"
     }).done(function ( data ) {
-        console.log(data);
+
+        if (data === '75.131.178.217') {
+            $('.carousel-inner .item img').remove();
+        }
     });
 
     // Tooltips
