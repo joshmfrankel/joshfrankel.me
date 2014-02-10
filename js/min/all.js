@@ -88,6 +88,13 @@ $(document).ready(function() {
         }
     });
 
+
+    $.ajax({
+        url: "php/getIp.php"
+    }).done(function ( data ) {
+        console.log(data);
+    });
+
     // Tooltips
     $('.tooltip-hook').tooltip();
 
