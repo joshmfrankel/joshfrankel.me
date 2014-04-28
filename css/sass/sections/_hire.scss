@@ -160,6 +160,9 @@ aside {
     .social-resume::before {
         background-position: -252px 0;
     }
+    .social-jekyll::before {
+        background-position: -294px 0;
+    }
 }
 @media (min-width: $screen-sm) {
     .page-header h2 small {

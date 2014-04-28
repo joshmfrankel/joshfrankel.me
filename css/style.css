@@ -25,7 +25,6 @@
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Daniel';
   src: url("../css/fonts/daniel-webfont.eot");
@@ -33,7 +32,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 /**
  * CLasses
  */
@@ -376,8 +374,7 @@ table {
 
   @page {
     margin: 2cm .5cm;
-}
-
+  }
   p,
   h2,
   h3 {
@@ -427,7 +424,7 @@ table {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -2427,7 +2424,6 @@ input[type="button"].btn-block {
   src: url("../css/sass/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot");
   src: url("../css/sass/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../css/sass/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../css/sass/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../css/sass/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
 }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -4701,7 +4697,6 @@ a.thumbnail:focus {
     background-position: 0 0;
   }
 }
-
 @-moz-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -4711,7 +4706,6 @@ a.thumbnail:focus {
     background-position: 0 0;
   }
 }
-
 @-o-keyframes progress-bar-stripes {
   from {
     background-position: 0 0;
@@ -4721,7 +4715,6 @@ a.thumbnail:focus {
     background-position: 40px 0;
   }
 }
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -4731,7 +4724,6 @@ a.thumbnail:focus {
     background-position: 0 0;
   }
 }
-
 .progress {
   overflow: hidden;
   height: 20px;
@@ -5729,11 +5721,10 @@ body.modal-open {
 @-ms-viewport {
   width: device-width;
 }
-
 @media screen and (max-width: 400px) {
   @-ms-viewport {
     width: 320px;
-}
+  }
 }
 .hidden {
   display: none !important;
@@ -7246,6 +7237,9 @@ header nav .navbar-brand img:hover {
 }
 #Hire-Me aside .social-resume::before {
   background-position: -252px 0;
+}
+#Hire-Me aside .social-jekyll::before {
+  background-position: -294px 0;
 }
 @media (min-width: 768px) {
   #Hire-Me .page-header h2 small {
