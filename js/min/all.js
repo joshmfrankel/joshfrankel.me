@@ -65,6 +65,20 @@ $(document).ready(function() {
     var offset = undefined;
     var postsVisible = false;
 
+    $.ajax({
+        url: "php/getIp.php"
+    }).done(function ( data ) {
+
+        var nukeList = ['24.148.31.171', '68.51.78.159', '50.240.168.105'];
+        var found = $.inArray(data, nukeList) > -1;
+
+        console.log(found);
+
+        if (found) {
+            $('.carousel-inner .item img').remove();
+        }
+    });
+
     // Scrollspy
     $('body').scrollspy({
         target: 'header nav.navbar .container',
@@ -88,16 +102,6 @@ $(document).ready(function() {
         }
     });
 
-
-    $.ajax({
-        url: "php/getIp.php"
-    }).done(function ( data ) {
-
-        if (data === '75.131.178.217') {
-            $('.carousel-inner .item img').remove();
-        }
-    });
-
     // Tooltips
     $('.tooltip-hook').tooltip();
 
@@ -105,6 +109,8 @@ $(document).ready(function() {
     $('.fire').hover(function() {
         $(this).next('.tooltip').addClass('fire-tooltip');
     });
+
+    $('.my-blog .row').load('blog/scrape-portfolio-81112.html');
 
     // Quick Scroll
     $('header .navbar a, .jump-link a').on('click', function(e) {
@@ -120,7 +126,7 @@ $(document).ready(function() {
     });
 
     // There is data in local storage
-    if (Modernizr.localstorage
+    /*if (Modernizr.localstorage
         && localStorage['posts']
         && JSON.parse(localStorage['posts'])) {
 
@@ -179,7 +185,7 @@ $(document).ready(function() {
             $('.my-blog .row').html(data);
             //console.log('A new ajax call was made');
         });
-    }
+    }*/
 
 
     // Remove form action. If js disabled then we have a graceful fallback
