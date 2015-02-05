@@ -409,7 +409,8 @@
                 </div>
 
                 <div class="row">
-                    <form class="hire-me-form col-md-6" onsubmit="_gaq.push(['_trackEvent', 'Hire Me Form', 'Submit', 'User submitted the form']);" action="php/doMail.php">
+                    <form class="hire-me-form col-md-6" onsubmit="_gaq.push(['_trackEvent', 'Hire Me Form', 'Submit', 'User submitted the form']);" >
+                        <small class="alert alert-warning">Currently under maintenance. Please send all inquiries to <a href="mailto:josh@joshfrankel.me">josh@joshfrankel.me</a></small><br /><br /><br />
                         <div class="form-error">
                             <div class="alert alert-danger"></div>
                         </div>
@@ -418,19 +419,19 @@
                         </div>
 
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" required>
+                        <input type="text" name="name" id="name" required disabled>
 
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" maxlength="50" required>
+                        <input type="email" name="email" id="email" maxlength="50" required disabled>
 
                         <label for="question">How may I help you?</label>
-                        <textarea id="question" name="question" placeholder="I would like to hire Josh!" required></textarea>
+                        <textarea id="question" name="question" placeholder="I would like to hire Josh!" required disabled></textarea>
 
                         <label for="math">2+3=?<span class="handdrawn-no-robots"></span></label>
-                        <input type="number" name="math" id="math" min="5" max="5" required>
+                        <input type="number" name="math" id="math" min="5" max="5" required disabled>
 
                         <input type="hidden" name="zipcode" id="zipcode">
-                        <input type="submit" class="submit-btn btn btn-primary" value="Send to Josh">
+                        <input type="submit" class="submit-btn btn btn-primary" disabled value="Send to Josh">
                     </form>
 
                     <aside class="col-md-5 col-md-offset-1 col-lg-offset-1 col-lg-5">
