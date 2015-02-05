@@ -24,6 +24,9 @@
       @include img-responsive();
       line-height: 1;
     }
+    > img {
+      width:100%;
+    }
   }
 
   > .active,
