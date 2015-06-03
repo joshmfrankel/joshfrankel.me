@@ -80,9 +80,9 @@
     $mail->Body    = $sQuestion;
 
     if(!$mail->Send()) {
-       //echo 'Message could not be sent.';
-       //echo 'Mailer Error: ' . $mail->ErrorInfo;
-       //return 0;
+       echo 'Message could not be sent.';
+       echo 'Mailer Error: ' . $mail->ErrorInfo;
+       return 0;
 
        $response = array(
             'msg' => 'Message could not be sent',
