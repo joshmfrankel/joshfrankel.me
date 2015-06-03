@@ -100,7 +100,7 @@
         float:left;
         margin-right: 20px;
 
-        &:nth-child(3n+2) {
+        &:nth-child(3n) {
             margin-right: 0;
         }
     }
@@ -112,7 +112,7 @@
         margin-right: 25px;
         float:left;
 
-        &:nth-child(3n+2) {
+        &:nth-child(3n) {
             margin-right: 0;
         }
     }

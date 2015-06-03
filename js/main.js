@@ -4,20 +4,6 @@ $(document).ready(function() {
     var offset = undefined;
     var postsVisible = false;
 
-    $.ajax({
-        url: "php/getIp.php"
-    }).done(function ( data ) {
-
-        var nukeList = ['24.148.31.171', '68.51.78.159', '50.240.168.105'];
-        var found = $.inArray(data, nukeList) > -1;
-
-        console.log(found);
-
-        if (found) {
-            $('.carousel-inner .item img').remove();
-        }
-    });
-
     // Scrollspy
     $('body').scrollspy({
         target: 'header nav.navbar .container',
@@ -54,78 +40,20 @@ $(document).ready(function() {
     // Quick Scroll
     $('header .navbar a, .jump-link a').on('click', function(e) {
 
-        // Prevent the flicker from the hash jump
-        e.preventDefault();
-
         // grab the hash
         var hash = $(this).attr('href');
 
-        // Call the scroll method
-        scrollToAnchor(hash, offset);
-    });
+        // Allow blog link
+        if (hash !== 'http://www.joshfrankel.me/blog') {
+            // Prevent the flicker from the hash jump
+            e.preventDefault();
 
-    // There is data in local storage
-    /*if (Modernizr.localstorage
-        && localStorage['posts']
-        && JSON.parse(localStorage['posts'])) {
-
-        currentTime = new Date();
-
-        // Grab the posts from localstorage
-        retrieveLocalStorage = JSON.parse(localStorage['posts']);
-
-        // Calculate the time in minutes since last cached
-        timeSinceCached = ((currentTime.getTime() - retrieveLocalStorage['cachedAt']) / 1000) / 60;
-
-        // Reset the cache if it is greater than 5 minutes old
-        if (timeSinceCached > 5) {
-
-            // clear storage
-            localStorage.clear();
-            //console.warn('Local storage was cleared');
-        } else {
-
-            // Set the data if found in the cache
-            $('.my-blog .row').html(retrieveLocalStorage['html']);
-
-            // Posts are now visible this will block ajax from firing an
-            // unnecessary request
-            postsVisible = true;
-
-            //console.log('Local storage was not stale');
+            // Call the scroll method
+            scrollToAnchor(hash, offset);
         }
 
-    }
 
-    // If the posts are already displayed then don't perform the ajax
-    if (postsVisible !== true) {
-
-        // Blog Posts section
-        $.ajax({
-            url: "php/getPosts.php"
-        }).done(function ( data ) {
-
-            // Cache the result
-            if (Modernizr.localstorage) {
-
-                // Get Current time
-                var cachedAt = new Date().getTime();
-
-                // Format blog html and time cached
-                var posts = {
-                    'html': data,
-                    'cachedAt': cachedAt
-                };
-
-                // Convert to json and place into localstorage
-                localStorage['posts'] = JSON.stringify(posts);
-            }
-
-            $('.my-blog .row').html(data);
-            //console.log('A new ajax call was made');
-        });
-    }*/
-
+    });
 
     // Remove form action. If js disabled then we have a graceful fallback
     $('.hire-me-form').removeAttr('action');
